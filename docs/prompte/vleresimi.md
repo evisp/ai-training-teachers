@@ -1,6 +1,6 @@
-# Vlerësimi
+# Vlerësimi dhe komentet
 
-Prompte për kuize, teste dhe pyetje përmbyllëse të orës.
+Prompte për kuize, pyetje përmbyllëse, rubrika, komente dhe teste.
 
 !!! note "Së shpejti"
-    Kjo faqe është në përgatitje. Përmbajtja do të shtohet në fazën e ardhshme.
+    Promptet e kësaj kategorie do të shtohen së shpejti. Ndërkohë, shihni [pesë promptet për të filluar](index.md#pese-prompte-per-te-filluar).

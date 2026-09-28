@@ -94,12 +94,13 @@ nav:
       - Pas trajnimit: trajnimi/pas-trajnimit.md
   - Biblioteka e prompteve:
       - prompte/index.md
-      - Planifikimi i mësimit: prompte/planifikimi-i-mesimit.md
-      - Diferencimi: prompte/diferencimi.md
-      - Vlerësimi: prompte/vleresimi.md
-      - Rubrikat dhe komentet: prompte/rubrikat-dhe-komentet.md
+      - Planifikimi dhe aktivitetet: prompte/planifikimi.md
+      - Diferencimi dhe përshtatja: prompte/diferencimi.md
+      - Vlerësimi dhe komentet: prompte/vleresimi.md
       - Komunikimi: prompte/komunikimi.md
-      - Aktivitete në klasë: prompte/aktivitete-ne-klase.md
+      - Kontrolli dhe përmirësimi: prompte/kontrolli.md
+      - Nga trajnimi: prompte/nga-trajnimi.md
+      - Kartela për printim: prompte/kartela.md
   - Burime:
       - Fjalori: burime/fjalori.md
       - Pyetje të shpeshta: burime/pyetje-te-shpeshta.md

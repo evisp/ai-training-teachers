@@ -1,6 +1,6 @@
-# Diferencimi
+# Diferencimi dhe përshtatja
 
-Prompte për përshtatjen e materialeve sipas niveleve dhe nevojave të ndryshme të nxënësve.
+Prompte për tekste në nivele, thjeshtim, sfida për nxënësit e avancuar dhe fjalorë.
 
 !!! note "Së shpejti"
-    Kjo faqe është në përgatitje. Përmbajtja do të shtohet në fazën e ardhshme.
+    Promptet e kësaj kategorie do të shtohen së shpejti. Ndërkohë, shihni [pesë promptet për të filluar](index.md#pese-prompte-per-te-filluar).

@@ -710,3 +710,54 @@ svg text { font-family: inherit; }
 @media print {
   .md-typeset .commitment { box-shadow: none; break-inside: avoid; }
 }
+
+/* ---------- Biblioteka: fraza të shkurtra ---------- */
+.md-typeset .phrase-list .highlight { margin: 0.45rem 0; }
+.md-typeset .phrase-list .highlight code { white-space: pre-wrap; }
+.md-typeset .prompt-card .card-link { margin: 0.2rem 0 0.4rem; font-size: 0.74rem; }
+
+/* ---------- Kartela për printim ---------- */
+.md-typeset .cheatsheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+}
+.md-typeset .cheatsheet .cheat {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--sage-line);
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+.md-typeset .cheatsheet .cheat strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.78rem;
+}
+.md-typeset .cheatsheet .cheat code {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  white-space: normal;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+.md-typeset .cheatsheet .cheat p { margin: 0; }
+.md-typeset .sheet-intro { font-size: 0.74rem; color: var(--ink-soft); }
+@media print {
+  .md-typeset .cheatsheet { grid-template-columns: 1fr 1fr; gap: 0.25cm; margin: 0.3cm 0 0; }
+  .md-typeset .cheatsheet .cheat {
+    break-inside: avoid;
+    padding: 0.2cm 0.3cm;
+    border-color: #999;
+    font-size: 8.5pt;
+  }
+  .md-typeset .cheatsheet .cheat strong { font-size: 9pt; margin-bottom: 0.1cm; }
+  .md-typeset .cheatsheet .cheat code { font-size: 7.8pt; padding: 0.12cm 0.18cm; line-height: 1.4; }
+  .md-typeset .sheet-intro { font-size: 8.5pt; }
+  .md-content h1 { font-size: 16pt; margin: 0 0 0.2cm; }
+  .md-footer, .md-source-file { display: none !important; }
+  html, body, .md-container, .md-main { min-height: 0 !important; height: auto !important; }
+  .md-main__inner { margin-top: 0 !important; padding-bottom: 0 !important; }
+}
