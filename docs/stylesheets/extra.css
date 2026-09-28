@@ -356,6 +356,7 @@
 .s-line { stroke: var(--sage-line); }
 .s-sage { stroke: var(--sage); }
 .s-soft { stroke: var(--ink-soft); }
+.s-ink { stroke: var(--ink); }
 .s-red { stroke: var(--red-pen); }
 .s-rule { stroke: var(--rule); }
 .s-pencil { stroke: var(--pencil); }
@@ -547,3 +548,25 @@ svg text { font-family: inherit; }
 }
 .md-typeset .next-page p { margin: 0.25rem 0; }
 .md-typeset .next-page .md-button { margin-top: 0.6rem; }
+
+/* ---------- Lista e kontrollit (për printim) ---------- */
+.md-typeset .checklist {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem 0.6rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.md-typeset .checklist .task-list-item { margin-bottom: 0.6rem; }
+@media print {
+  .md-typeset .checklist { break-inside: avoid; border-color: #999; }
+}
+
+/* ---------- Kartat e leximeve ---------- */
+.md-typeset .grid.cards .card-question {
+  font-style: italic;
+  color: var(--ink);
+}
+.md-typeset .grid.cards.reading-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
