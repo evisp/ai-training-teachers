@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" role="img" aria-label="Axhenda 90 minutëshe: demo 10 minuta, dy ide 10 minuta, misionet në grup 45 minuta, galeria 15 minuta, mbyllja 10 minuta">
+<g font-size="11.5" class="f-soft" text-anchor="middle"><text x="20" y="38">0'</text><text x="91" y="38">10'</text><text x="162" y="38">20'</text><text x="482" y="38">65'</text><text x="589" y="38">80'</text><text x="660" y="38">90'</text></g>
+<rect x="20" y="48" width="71" height="44" rx="10" class="f-sage"/>
+<rect x="93" y="48" width="69" height="44" rx="10" class="f-sage"/>
+<rect x="164" y="48" width="318" height="44" rx="10" class="f-hl s-pencil" stroke-width="1.4"/>
+<rect x="484" y="48" width="105" height="44" rx="10" class="f-hl s-pencil" stroke-width="1.4"/>
+<rect x="591" y="48" width="69" height="44" rx="10" class="f-sagesoft s-line" stroke-width="1.2"/>
+<text x="323" y="75" text-anchor="middle" font-size="14" class="f-ink t-title">45 minuta punë në grup</text>
+<g font-size="13.5" class="f-ink t-title" text-anchor="middle"><text x="55" y="118">Demo</text><text x="127" y="118">Dy ide</text><text x="323" y="118">Misionet në grup</text><text x="536" y="118">Galeria</text><text x="625" y="118">Mbyllja</text></g>
+<g font-size="11" class="f-soft" text-anchor="middle"><text x="55" y="136">fotosinteza</text><text x="127" y="136">formula dhe</text><text x="127" y="150">semafori</text><text x="323" y="136">Krijo, Përshtat, Kontrollo</text><text x="536" y="136">90 sekonda</text><text x="536" y="150">për grup</text><text x="625" y="136">Java 1</text></g>
+<rect x="170" y="172" width="14" height="14" rx="4" class="f-sage"/>
+<text x="192" y="184" font-size="12" class="f-soft">Lehtësuesi tregon</text>
+<rect x="330" y="172" width="14" height="14" rx="4" class="f-hl s-pencil"/>
+<text x="352" y="184" font-size="12" class="f-soft">Mësuesit punojnë dhe prezantojnë</text>
+</svg>

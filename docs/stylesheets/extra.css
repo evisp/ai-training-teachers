@@ -594,3 +594,41 @@ svg text { font-family: inherit; }
 .md-typeset .question > summary::after { color: var(--sage); }
 .md-typeset details.question:focus-within { box-shadow: none; }
 .md-typeset details.question { margin: 0.7rem 0; }
+
+/* ---------- Faza 3: trajnimi ---------- */
+:root,
+[data-md-color-scheme="default"] { --red-soft: #fbeceb; }
+[data-md-color-scheme="slate"] { --red-soft: #2e1f1e; }
+.f-skysoft { fill: var(--sky-soft); }
+.s-sky { stroke: var(--sky-line); }
+
+/* Kujdes (warning) në tonet e stilolapsit të kuq */
+.md-typeset .admonition.warning,
+.md-typeset details.warning { border-color: var(--red-pen); }
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary { background-color: var(--red-soft); }
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before { background-color: var(--red-pen); }
+
+/* Etiketa e vogël mbi kutinë e promptit */
+.md-typeset .prompt-card .prompt-label {
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* Hapa kompaktë (p.sh. 5 hapat e demos) */
+.md-typeset .steps.compact ol {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
+  gap: 0.6rem;
+}
+.md-typeset .steps.compact ol li {
+  padding: 2.9rem 0.9rem 0.9rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+}
+.md-typeset .steps.compact ol li::before {
+  top: 0.9rem;
+  left: 0.9rem;
+}
