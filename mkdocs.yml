@@ -89,9 +89,9 @@ nav:
       - Etika e IA-së: bazat/etika-e-ia.md
   - Trajnimi:
       - trajnimi/index.md
-      - Sesioni 1: trajnimi/sesioni-1.md
-      - Sesioni 2: trajnimi/sesioni-2.md
-      - Aktivitete praktike: trajnimi/aktivitete.md
+      - Demo e hapjes: trajnimi/demo.md
+      - Misionet: trajnimi/misionet.md
+      - Pas trajnimit: trajnimi/pas-trajnimit.md
   - Biblioteka e prompteve:
       - prompte/index.md
       - Planifikimi i mësimit: prompte/planifikimi-i-mesimit.md
