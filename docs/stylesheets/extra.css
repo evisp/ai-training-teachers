@@ -570,3 +570,27 @@ svg text { font-family: inherit; }
 .md-typeset .grid.cards.reading-cards {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
 }
+
+/* ---------- Fjalori (lista e përkufizimeve) ---------- */
+.md-typeset dl dt {
+  margin-top: 1.6em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.md-typeset dl dt em {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.md-typeset dl dd {
+  margin: 0.4rem 0 0;
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  border-left: 3px solid var(--sage-line);
+}
+.md-typeset dl dd p { margin: 0.5em 0; }
+[dir="ltr"] .md-typeset dl dd { margin-left: 0; }
+
+/* ---------- Pyetjet e shpeshta ---------- */
+.md-typeset .question > summary::after { color: var(--sage); }
+.md-typeset details.question:focus-within { box-shadow: none; }
+.md-typeset details.question { margin: 0.7rem 0; }
