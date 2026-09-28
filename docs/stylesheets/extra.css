@@ -632,3 +632,42 @@ svg text { font-family: inherit; }
   top: 0.9rem;
   left: 0.9rem;
 }
+
+/* ---------- Misionet ---------- */
+.md-typeset .mission {
+  margin: 2.5rem 0;
+  padding: 0.2rem 1.6rem 1.2rem;
+  border: 1px solid var(--sage-line);
+  border-radius: 18px;
+  background: var(--surface);
+}
+.md-typeset .mission > h2:first-child { margin-top: 1.2rem; }
+.md-typeset .mission h3 { margin-top: 1.8rem; }
+.md-typeset .mission .task-time {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  font-size: 0.68rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.md-typeset .mission .done-when {
+  margin: 0.8rem 0;
+  padding: 0.5rem 0.9rem;
+  border-left: 3px solid var(--pencil);
+  background: var(--pencil-soft);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.78rem;
+}
+@media screen and (max-width: 600px) {
+  .md-typeset .mission { padding: 0.2rem 0.9rem 1rem; }
+}
+@media print {
+  .md-typeset .mission { break-before: page; border: none; padding: 0; }
+}
+.md-typeset .grid.cards.three-up {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+}

@@ -30,7 +30,7 @@ Teoria është në faqet e [Bazave](../bazat/index.md). Në trajnim punojmë: sh
 <div class="outcomes" markdown>
 
 - **Një telefon ose laptop të karikuar.** Mjafton një pajisje për dy veta.
-- **Një llogari Google, për të hyrë në Gemini.** E përdorim edhe për të krijuar imazhe. Hyni një herë në [gemini.google.com](https://gemini.google.com) para trajnimit.
+- **Një llogari në një asistent të IA-së.** ChatGPT, Gemini, Claude ose Copilot: përdorni atë që njihni. Në demo përdorim Gemini, sepse krijon edhe imazhe.
 - **Një temë që e jepni javën e ardhshme.** Do të punoni mbi të, që të dilni me diçka të gatshme për klasën.
 - **Leximin e Bazave.** Nuk është i detyrueshëm, por e bën trajnimin shumë më të dobishëm.
 
