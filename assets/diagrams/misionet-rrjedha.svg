@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" role="img" aria-label="Rrjedha e misionit: krijo, përshtat, kontrollo, dorëzo, gjithsej 45 minuta">
+<g class="f-paper s-line" stroke-width="1.2"><rect x="10" y="20" width="150" height="120" rx="14"/><rect x="180" y="20" width="150" height="120" rx="14"/><rect x="350" y="20" width="150" height="120" rx="14"/></g>
+<rect x="520" y="20" width="150" height="120" rx="14" class="f-hl s-pencil" stroke-width="1.4"/>
+<g class="f-pencil"><circle cx="38" cy="48" r="14"/><circle cx="208" cy="48" r="14"/><circle cx="378" cy="48" r="14"/></g>
+<circle cx="548" cy="48" r="14" class="f-sage"/>
+<g font-size="14" font-weight="700" text-anchor="middle"><text x="38" y="53" fill="#1d1d1d">1</text><text x="208" y="53" fill="#1d1d1d">2</text><text x="378" y="53" fill="#1d1d1d">3</text><text x="548" y="53" class="f-paper">4</text></g>
+<g font-size="15" class="f-ink t-title"><text x="60" y="54">Krijo</text><text x="230" y="54">Përshtat</text><text x="400" y="54">Kontrollo</text><text x="570" y="54">Dorëzo</text></g>
+<g class="f-sagesoft"><rect x="28" y="70" width="64" height="22" rx="11"/><rect x="198" y="70" width="64" height="22" rx="11"/><rect x="368" y="70" width="64" height="22" rx="11"/></g>
+<rect x="538" y="70" width="64" height="22" rx="11" class="f-paper"/>
+<g font-size="12" class="f-ink" text-anchor="middle"><text x="60" y="85">15 min</text><text x="230" y="85">12 min</text><text x="400" y="85">12 min</text><text x="570" y="85">6 min</text></g>
+<g font-size="12" class="f-soft"><text x="28" y="116">materiali i parë</text><text x="198" y="116">për nxënës</text><text x="198" y="132">të ndryshëm</text><text x="368" y="116">gjeni të paktën</text><text x="368" y="132">një problem</text><text x="538" y="116">prompti më i mirë</text><text x="538" y="132">dhe problemi</text></g>
+<g class="f-none s-sage" stroke-width="1.8"><line x1="163" y1="80" x2="171" y2="80"/><line x1="333" y1="80" x2="341" y2="80"/><line x1="503" y1="80" x2="511" y2="80"/></g>
+<g class="f-sage"><polygon points="170,75 178,80 170,85"/><polygon points="340,75 348,80 340,85"/><polygon points="510,75 518,80 510,85"/></g>
+</svg>

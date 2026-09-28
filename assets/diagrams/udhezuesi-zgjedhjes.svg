@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-label="Udhëzues për zgjedhjen e mjetit: për të pyetur dhe shkruar, asistent i përgjithshëm; për dokumentet tuaja, NotebookLM; për material vizual, Canva; për shabllone gati, MagicSchool">
+<rect x="10" y="140" width="170" height="60" rx="14" class="f-sage"/>
+<text x="95" y="165" text-anchor="middle" font-size="16" class="f-paper t-title">Çfarë doni</text>
+<text x="95" y="187" text-anchor="middle" font-size="16" class="f-paper t-title">të bëni?</text>
+<g class="f-none s-sage" stroke-width="1.6"><path d="M180 170 C 206 170, 204 50, 230 50"/><path d="M180 170 C 206 170, 204 130, 230 130"/><path d="M180 170 C 206 170, 204 210, 230 210"/><path d="M180 170 C 206 170, 204 290, 230 290"/></g>
+<g class="f-paper s-line" stroke-width="1.2"><rect x="230" y="21" width="200" height="58" rx="12"/><rect x="230" y="101" width="200" height="58" rx="12"/><rect x="230" y="181" width="200" height="58" rx="12"/><rect x="230" y="261" width="200" height="58" rx="12"/></g>
+<g font-size="14" class="f-ink"><text x="248" y="46">Të pyes, të shkruaj,</text><text x="248" y="65">të planifikoj</text><text x="248" y="126">Të punoj me</text><text x="248" y="145">dokumentet e mia</text><text x="248" y="206">Të krijoj</text><text x="248" y="225">material vizual</text><text x="248" y="286">Të gjej shabllone</text><text x="248" y="305">gati për mësues</text></g>
+<g class="f-none s-sage" stroke-width="1.6"><line x1="432" y1="50" x2="460" y2="50"/><line x1="432" y1="130" x2="460" y2="130"/><line x1="432" y1="210" x2="460" y2="210"/><line x1="432" y1="290" x2="460" y2="290"/></g>
+<g class="f-sage"><polygon points="458,45 468,50 458,55"/><polygon points="458,125 468,130 458,135"/><polygon points="458,205 468,210 458,215"/><polygon points="458,285 468,290 458,295"/></g>
+<rect x="472" y="21" width="198" height="58" rx="14" class="f-hl s-pencil" stroke-width="1.4"/>
+<g class="f-sagesoft s-line" stroke-width="1.2"><rect x="472" y="101" width="198" height="58" rx="14"/><rect x="472" y="181" width="198" height="58" rx="14"/><rect x="472" y="261" width="198" height="58" rx="14"/></g>
+<g font-size="14.5" class="f-ink t-title" text-anchor="middle"><text x="571" y="47" font-size="13.5">Asistent i përgjithshëm</text><text x="571" y="127">NotebookLM</text><text x="571" y="207">Canva</text><text x="571" y="287">MagicSchool</text></g>
+<g font-size="12" class="f-soft" text-anchor="middle"><text x="571" y="66">ChatGPT, Gemini, Claude…</text><text x="571" y="146">mbi dokumentet tuaja</text><text x="571" y="226">postera, prezantime</text><text x="571" y="306">shabllone për mësues</text></g>
+</svg>

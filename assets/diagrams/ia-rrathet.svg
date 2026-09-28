@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Tre rrathë brenda njëri-tjetrit: Inteligjenca artificiale përmban Mësimin automatik, i cili përmban IA-në gjeneruese">
+<ellipse cx="200" cy="180" rx="180" ry="160" class="f-sagesoft s-sage" stroke-width="1.5"/>
+<ellipse cx="215" cy="205" rx="130" ry="120" class="f-paper s-sage" stroke-width="1.5"/>
+<ellipse cx="230" cy="250" rx="80" ry="70" class="f-hl s-pencil" stroke-width="1.5"/>
+<text x="200" y="52" text-anchor="middle" font-size="16" class="f-ink t-title">Inteligjenca artificiale</text>
+<text x="215" y="115" text-anchor="middle" font-size="16" class="f-ink t-title">Mësimi automatik</text>
+<text x="230" y="256" text-anchor="middle" font-size="16" class="f-ink t-title">IA gjeneruese</text>
+<g class="s-soft" stroke-width="1" stroke-dasharray="3 4"><line x1="322" y1="60" x2="412" y2="60"/><line x1="334" y1="150" x2="412" y2="150"/><line x1="312" y1="250" x2="412" y2="250"/></g>
+<g class="f-sage"><circle cx="322" cy="60" r="3.5"/><circle cx="334" cy="150" r="3.5"/><circle cx="312" cy="250" r="3.5"/></g>
+<text x="422" y="56" font-size="15" class="f-ink t-title">Kryen detyra “inteligjente”</text>
+<text x="422" y="77" font-size="13" class="f-soft">p.sh. një lojë shahu me rregulla</text>
+<text x="422" y="146" font-size="15" class="f-ink t-title">Mëson nga shembujt</text>
+<text x="422" y="167" font-size="13" class="f-soft">p.sh. filtri i spam-it, njohja e shkrimit</text>
+<text x="422" y="246" font-size="15" class="f-ink t-title">Krijon përmbajtje të re</text>
+<text x="422" y="267" font-size="13" class="f-soft">p.sh. ChatGPT, Gemini, Claude</text>
+</svg>

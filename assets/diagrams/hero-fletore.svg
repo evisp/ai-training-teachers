@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" role="img" aria-label="Një faqe fletoreje me një pyetje të mësuesit dhe një përgjigje nga IA">
+<g transform="rotate(-2 210 160)">
+<rect x="30" y="20" width="330" height="270" rx="10" class="f-paper s-line" stroke-width="1.5"/>
+<g class="s-rule" stroke-width="1.2"><line x1="30" y1="64" x2="360" y2="64"/><line x1="30" y1="90" x2="360" y2="90"/><line x1="30" y1="116" x2="360" y2="116"/><line x1="30" y1="142" x2="360" y2="142"/><line x1="30" y1="168" x2="360" y2="168"/><line x1="30" y1="194" x2="360" y2="194"/><line x1="30" y1="220" x2="360" y2="220"/><line x1="30" y1="246" x2="360" y2="246"/><line x1="30" y1="272" x2="360" y2="272"/></g>
+<line x1="68" y1="20" x2="68" y2="290" class="s-red" stroke-width="1.5" opacity="0.5"/>
+<rect x="88" y="46" width="236" height="60" rx="14" class="f-sagesoft s-line" stroke-width="1.2"/>
+<rect x="104" y="64" width="190" height="8" rx="4" class="f-sage" opacity="0.55"/>
+<rect x="104" y="82" width="138" height="8" rx="4" class="f-sage" opacity="0.55"/>
+<rect x="106" y="126" width="236" height="122" rx="14" class="f-paper s-sage" stroke-width="1.5"/>
+<rect x="120" y="186" width="150" height="14" rx="3" class="f-hl"/>
+<rect x="124" y="148" width="196" height="8" rx="4" class="f-ink" opacity="0.22"/>
+<rect x="124" y="167" width="176" height="8" rx="4" class="f-ink" opacity="0.22"/>
+<rect x="124" y="189" width="188" height="8" rx="4" class="f-ink" opacity="0.22"/>
+<rect x="124" y="208" width="126" height="8" rx="4" class="f-ink" opacity="0.22"/>
+<path d="M106 112 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" class="f-pencil"/>
+</g>
+<g transform="translate(262 292) rotate(-32)">
+<rect x="0" y="0" width="112" height="18" rx="2" class="f-pencil"/>
+<rect x="0" y="0" width="112" height="6" class="f-ink" opacity="0.08"/>
+<rect x="112" y="0" width="16" height="18" rx="2" class="f-eraser"/>
+<polygon points="0,0 -24,9 0,18" fill="#f1d3a0"/>
+<polygon points="-16,6 -24,9 -16,12" class="f-ink"/>
+</g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 190" role="img" aria-label="Galeria në 90 sekonda: tema 15 sekonda, prompti 30, rezultati 20, problemi 25">
+<rect x="20" y="30" width="105" height="40" rx="10" class="f-sagesoft s-line"/>
+<rect x="129" y="30" width="209" height="40" rx="10" class="f-hl s-pencil"/>
+<rect x="342" y="30" width="138" height="40" rx="10" class="f-sagesoft s-line"/>
+<rect x="484" y="30" width="176" height="40" rx="10" class="f-hl s-pencil"/>
+<g font-size="13" class="f-ink t-title" text-anchor="middle"><text x="72" y="55">15 sek</text><text x="233" y="55">30 sek</text><text x="411" y="55">20 sek</text><text x="572" y="55">25 sek</text></g>
+<g font-size="11.5" class="f-soft" text-anchor="middle"><text x="20" y="22">0"</text><text x="660" y="22">90"</text></g>
+<g font-size="14" class="f-ink t-title"><text x="24" y="102">Tema</text><text x="133" y="102">Prompti</text><text x="346" y="102">Rezultati</text><text x="488" y="102">Problemi</text></g>
+<g font-size="12" class="f-soft" font-style="italic"><text x="24" y="124">“Ne punuam</text><text x="24" y="141">për…”</text><text x="133" y="124">“Prompti që funksionoi</text><text x="133" y="141">më mirë ishte…”</text><text x="346" y="124">“Ja çfarë</text><text x="346" y="141">doli…”</text><text x="488" y="124">“IA gaboi te…,</text><text x="488" y="141">e ndreqëm duke…”</text></g>
+<rect x="200" y="160" width="280" height="26" rx="13" class="f-sage"/>
+<text x="340" y="178" text-anchor="middle" font-size="12.5" class="f-paper t-title">Flet raportuesi, grupi tregon ekranin</text>
+</svg>

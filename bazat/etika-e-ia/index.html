@@ -1,0 +1,1760 @@
+
+<!doctype html>
+<html lang="sq" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Udhëzues praktik për përdorimin e inteligjencës artificiale në klasë">
+      
+      
+        <meta name="author" content="Evis Plaku">
+      
+      
+        <link rel="canonical" href="https://evisp.github.io/ai-training-teachers/bazat/etika-e-ia/">
+      
+      
+        <link rel="prev" href="../mjetet-e-ia/">
+      
+      
+        <link rel="next" href="../../trajnimi/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Etika e IA-së - IA për mësuesit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lexend";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#etika-e-ia-se-per-mesuesit" class="md-skip">
+          Kalo te përmbajtja
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Koka">
+    <a href="../.." title="IA për mësuesit" class="md-header__button md-logo" aria-label="IA për mësuesit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IA për mësuesit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Etika e IA-së
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Kalo në modalitetin e errët"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Kalo në modalitetin e errët" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Kalo në modalitetin e ndriçuar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Kalo në modalitetin e ndriçuar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Kërko" placeholder="Kërko" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Kërko">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zbraz" aria-label="Zbraz" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Duke filluar kërkimin
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/evisp/ai-training-teachers" title="Shko te burimi" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    evisp/ai-training-teachers
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Skedat" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Kreu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Bazat
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../trajnimi/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Trajnimi
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prompte/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Biblioteka e prompteve
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../burime/fjalori/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Burime
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigacion" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IA për mësuesit" class="md-nav__button md-logo" aria-label="IA për mësuesit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg>
+
+    </a>
+    IA për mësuesit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/evisp/ai-training-teachers" title="Shko te burimi" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    evisp/ai-training-teachers
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kreu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bazat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bazat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cfare-eshte-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Çfarë është IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mjetet-e-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mjetet kryesore të IA-së
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etika e IA-së
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etika e IA-së
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabela e përmbajtjes">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabela e përmbajtjes
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#te-dhenat-dhe-privatesia-e-nxenesve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Të dhënat dhe privatësia e nxënësve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mosha-dhe-perdorimi-nga-nxenesit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mosha dhe përdorimi nga nxënësit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integriteti-akademik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integriteti akademik
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragjykimet-dhe-drejtesia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paragjykimet dhe drejtësia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transparenca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transparenca
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-e-kontrollit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista e kontrollit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pikat-kryesore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pikat kryesore
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../trajnimi/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trajnimi
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trajnimi
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trajnimi/demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo e hapjes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trajnimi/misionet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misionet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trajnimi/pas-trajnimit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pas trajnimit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../prompte/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteka e prompteve
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Biblioteka e prompteve
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/planifikimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planifikimi dhe aktivitetet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/diferencimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diferencimi dhe përshtatja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/vleresimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vlerësimi dhe komentet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/komunikimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Komunikimi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/kontrolli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontrolli dhe përmirësimi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/nga-trajnimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nga trajnimi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/kartela/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kartela për printim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Burime
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Burime
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../burime/fjalori/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fjalori
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../burime/pyetje-te-shpeshta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pyetje të shpeshta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabela e përmbajtjes">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabela e përmbajtjes
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#te-dhenat-dhe-privatesia-e-nxenesve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Të dhënat dhe privatësia e nxënësve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mosha-dhe-perdorimi-nga-nxenesit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mosha dhe përdorimi nga nxënësit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integriteti-akademik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integriteti akademik
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragjykimet-dhe-drejtesia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paragjykimet dhe drejtësia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transparenca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transparenca
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-e-kontrollit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista e kontrollit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pikat-kryesore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pikat kryesore
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="etika-e-ia-se-per-mesuesit">Etika e IA-së për mësuesit<a class="headerlink" href="#etika-e-ia-se-per-mesuesit" title="Permanent link">&para;</a></h1>
+<p class="page-meta"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> Rreth 12 minuta lexim</p>
+<p>IA mund t'ju kursejë kohë, por bashkë me të vijnë pyetje të rëndësishme: çfarë ndodh me të dhënat e nxënësve, si e ruajmë ndershmërinë në detyra, a është IA e drejtë me të gjithë? Kjo faqe nuk synon t'ju trembë, por t'ju japë disa rregulla të qarta, që t'i përdorni mjetet me qetësi dhe përgjegjësi.</p>
+<div class="admonition note">
+<p class="admonition-title">Çfarë do të mësoni</p>
+<ul>
+<li>cilat të dhëna mund t'i vendosni në një mjet të IA-së dhe cilat kurrë</li>
+<li>si ta përshtatni përdorimin e IA-së sipas moshës së nxënësve</li>
+<li>si ta ruani integritetin akademik pa u mbështetur te "detektorët"</li>
+<li>si t'i dalloni dhe t'i bëni të dukshme paragjykimet e IA-së</li>
+<li>si të jeni transparentë me nxënësit, prindërit dhe kolegët</li>
+</ul>
+</div>
+<h2 id="te-dhenat-dhe-privatesia-e-nxenesve">Të dhënat dhe privatësia e nxënësve<a class="headerlink" href="#te-dhenat-dhe-privatesia-e-nxenesve" title="Permanent link">&para;</a></h2>
+<p>Gjithçka që shkruani në një mjet të IA-së dërgohet në serverat e një kompanie. Disa mjete, sidomos në versionet falas, mund t'i përdorin bisedat për të përmirësuar modelet e tyre. Prandaj rregulla më e thjeshtë është: <strong>mos shkruani asgjë që nuk do ta shkruanit në një email drejtuar një të panjohuri.</strong></p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 262" role="img" aria-label="Semafori i të dhënave: çfarë mund të vendosni në një mjet IA, çfarë me kujdes dhe çfarë kurrë">
+<g class="f-paper s-line" stroke-width="1.2"><rect x="10" y="10" width="210" height="240" rx="14"/><rect x="235" y="10" width="210" height="240" rx="14"/><rect x="460" y="10" width="210" height="240" rx="14"/></g>
+<circle cx="42" cy="44" r="15" class="f-sage"/><circle cx="267" cy="44" r="15" class="f-pencil"/><circle cx="492" cy="44" r="15" class="f-red"/>
+<path d="M35 44 l5 5 9 -10" class="f-none s-paper" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="265" y="35" width="4" height="11" rx="2" fill="#1d1d1d"/><circle cx="267" cy="51" r="2.2" fill="#1d1d1d"/>
+<path d="M486 38 l12 12 m0 -12 l-12 12" class="s-paper" stroke-width="2.6" stroke-linecap="round"/>
+<g font-size="15" class="f-ink t-title"><text x="66" y="50">Mund ta përdorni</text><text x="291" y="50">Me kujdes</text><text x="516" y="50">Kurrë</text></g>
+<g class="s-line" stroke-width="1"><line x1="28" y1="74" x2="202" y2="74"/><line x1="253" y1="74" x2="427" y2="74"/><line x1="478" y1="74" x2="652" y2="74"/></g>
+<g class="f-sage"><circle cx="34" cy="104" r="3.5"/><circle cx="34" cy="140" r="3.5"/><circle cx="34" cy="176" r="3.5"/><circle cx="34" cy="212" r="3.5"/></g>
+<g class="f-pencil"><circle cx="259" cy="104" r="3.5"/><circle cx="259" cy="140" r="3.5"/><circle cx="259" cy="176" r="3.5"/><circle cx="259" cy="212" r="3.5"/></g>
+<g class="f-red"><circle cx="484" cy="104" r="3.5"/><circle cx="484" cy="140" r="3.5"/><circle cx="484" cy="176" r="3.5"/><circle cx="484" cy="212" r="3.5"/></g>
+<g font-size="13" class="f-ink">
+<text x="46" y="109">Konceptet e lëndës</text><text x="46" y="145">Materialet tuaja</text><text x="46" y="181">Tekste të anonimizuara</text><text x="46" y="217">Pyetje të përgjithshme</text>
+<text x="271" y="109">Punë nxënësish pa emër</text><text x="271" y="145">Dokumente të shkollës</text><text x="271" y="181">Raste klase pa emra</text><text x="271" y="217">Foto të materialeve</text>
+<text x="496" y="109">Emra bashkë me nota</text><text x="496" y="145">Të dhëna shëndetësore</text><text x="496" y="181">Foto të nxënësve</text><text x="496" y="217">ID, adresa, telefona</text>
+</g>
+</svg>
+
+<figcaption>Kur nuk jeni të sigurt, trajtojeni si të kuqe.</figcaption>
+</figure>
+
+<p>Në Shqipëri të dhënat personale mbrohen nga <strong>Ligji nr. 124/2024 "Për mbrojtjen e të dhënave personale"</strong>, i përafruar me rregulloren evropiane GDPR. Të dhënat e fëmijëve kërkojnë kujdes të veçantë. Autoriteti përgjegjës është Komisioneri për të Drejtën e Informimit dhe Mbrojtjen e të Dhënave Personale (<a href="https://www.idp.al">idp.al</a>). Nëse shkolla juaj ka rregulla ose platforma të miratuara, ndiqni ato.</p>
+<div class="admonition tip">
+<p class="admonition-title">Si ta anonimizoni një tekst</p>
+<p>Zëvendësoni emrat me <em>"Nxënësi A"</em>, <em>"Nxënësja B"</em>. Hiqni datëlindjet, adresat dhe çdo detaj që e bën personin të dallueshëm, si <em>"djali i drejtorit"</em> ose <em>"e vetmja nxënëse nga fshati X"</em>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Shembull nga klasa: Mësues kujdestar, klasa e 8-të</p>
+<p>Doni t'u shkruani një mesazh të kujdesshëm prindërve të një nxënësi që ka mungesa të shpeshta. Në vend që të shkruani emrin, notat dhe arsyet familjare, shkruani: <em>"Shkruaj një mesazh të ngrohtë dhe profesional për prindërit e një nxënësi të klasës së 8-të që ka mungesa të shpeshta, duke i ftuar në një takim."</em> Merrni një draft të mirë, pastaj emrin dhe detajet i shtoni vetë, jashtë mjetit.</p>
+</div>
+<div class="summary">
+<p class="summary__label">Me një fjali</p>
+<p>IA-së i jepni detyrën, jo nxënësin: emrat dhe detajet personale i shtoni vetë, jashtë mjetit.</p>
+</div>
+<details class="reflect">
+<summary>3 pyetje për të menduar</summary>
+<ol>
+<li>Cilat të dhëna të nxënësve i trajtoni çdo ditë që nuk duhet të dalin kurrë nga shkolla?</li>
+<li>Si do ta shkruanit të njëjtën kërkesë pa asnjë të dhënë personale?</li>
+<li>A ka shkolla juaj rregulla për përdorimin e mjeteve digjitale? Nëse jo, kush duhet t'i hartojë?</li>
+</ol>
+</details>
+<h2 id="mosha-dhe-perdorimi-nga-nxenesit">Mosha dhe përdorimi nga nxënësit<a class="headerlink" href="#mosha-dhe-perdorimi-nga-nxenesit" title="Permanent link">&para;</a></h2>
+<p>Mjetet e IA-së kanë kushte përdorimi me kufi moshe. Shumica kërkojnë që përdoruesi të jetë të paktën 13 vjeç dhe, nën 18 vjeç, të ketë lejen e prindit; disa lejohen vetëm mbi 18 vjeç. Këto kushte ndryshojnë, prandaj kontrollojini para se t'u kërkoni nxënësve të përdorin një mjet.</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 290" role="img" aria-label="Përdorimi i IA-së sipas moshës: në fillor IA në duart e mësuesit, në të mesmen e ulët përdorim i udhëhequr, në të mesmen e lartë përdorim me rregulla">
+<text x="20" y="28" font-size="12.5" class="f-soft">Më shumë pavarësi për nxënësin</text>
+<path d="M214 24 H 640" class="f-none s-soft" stroke-width="1.4" stroke-dasharray="4 5"/>
+<polygon points="638,19 648,24 638,29" class="f-soft"/>
+<g class="f-sagesoft s-line" stroke-width="1.2"><rect x="20" y="150" width="200" height="130" rx="14"/><rect x="240" y="100" width="200" height="180" rx="14"/><rect x="460" y="50" width="200" height="230" rx="14"/></g>
+<g class="f-paper s-line" stroke-width="1"><rect x="34" y="164" width="130" height="24" rx="12"/><rect x="254" y="114" width="172" height="24" rx="12"/><rect x="474" y="64" width="178" height="24" rx="12"/></g>
+<g font-size="11.5" class="f-ink"><text x="46" y="180">Fillor, kl. 1–5</text><text x="266" y="130">I mesëm i ulët, kl. 6–9</text><text x="486" y="80">I mesëm i lartë, kl. 10–12</text></g>
+<g font-size="14.5" class="f-ink t-title"><text x="36" y="218">IA në duart e mësuesit</text><text x="256" y="168">Përdorim i udhëhequr</text><text x="476" y="118">Përdorim me rregulla</text></g>
+<g font-size="12.5" class="f-soft"><text x="36" y="241">Mësuesi demonstron,</text><text x="36" y="260">nxënësit mendojnë.</text><text x="256" y="191">Mjete të lejuara për</text><text x="256" y="210">moshën, me leje prindi.</text><text x="476" y="141">Nxënësit punojnë vetë,</text><text x="476" y="160">me transparencë.</text></g>
+</svg>
+
+<figcaption>Sa më të vegjël nxënësit, aq më shumë IA mbetet në duart e mësuesit.</figcaption>
+</figure>
+
+<p>Edhe kur mosha e lejon, nxënësit kanë nevojë për udhëzim: të dinë kur lejohet IA, si ta verifikojnë atë që u thotë dhe pse puna e tyre ka vlerë.</p>
+<div class="admonition example">
+<p class="admonition-title">Shembull nga klasa: Dituri natyre, klasa e 4-t</p>
+<p>Nxënësit pyesin pse gjethet ndryshojnë ngjyrë në vjeshtë. E hapni asistentin në projektor dhe e shkruani pyetjen së bashku me ta. E lexoni përgjigjen me zë, pastaj e krahasoni me librin: <em>"A thotë IA të njëjtën gjë? A mungon diçka?"</em> Nxënësit shohin si funksionon IA pa pasur llogari vetë, dhe mësojnë që në moshë të vogël ta verifikojnë.</p>
+</div>
+<div class="summary">
+<p class="summary__label">Me një fjali</p>
+<p>Mosha e nxënësve përcakton sa IA vendoset në duart e tyre; mësuesi mbetet gjithmonë udhërrëfyesi.</p>
+</div>
+<details class="reflect">
+<summary>3 pyetje për të menduar</summary>
+<ol>
+<li>Cilat mjete përdorin tashmë nxënësit tuaj, me ose pa dijeninë tuaj?</li>
+<li>Si do ta demonstronit IA-në në klasë pa u kërkuar nxënësve të krijojnë llogari?</li>
+<li>Çfarë do t'u thoni prindërve që pyesin nëse fëmija i tyre duhet ta përdorë IA-në?</li>
+</ol>
+</details>
+<h2 id="integriteti-akademik">Integriteti akademik<a class="headerlink" href="#integriteti-akademik" title="Permanent link">&para;</a></h2>
+<p>Shqetësimi më i shpeshtë i mësuesve është: <em>"Si ta di nëse detyrën e ka shkruar nxënësi apo IA?"</em> Përgjigjja e sinqertë: shpesh nuk mund ta dini me siguri. <strong>Detektorët e IA-së nuk janë të besueshëm.</strong> Gabojnë shpesh, dhe më shumë me nxënës që shkruajnë në një gjuhë që nuk e zotërojnë plotësisht. Mos akuzoni asnjë nxënës vetëm në bazë të një detektori.</p>
+<p>Zgjidhja më e mirë nuk është ndalimi, por <strong>qartësia</strong>: për çdo detyrë, tregoni që në fillim sa IA lejohet.</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 230" role="img" aria-label="Shkalla e përdorimit të IA-së në detyra, nga 0 pa IA deri në 4 IA e lirë me transparencë">
+<g class="s-line" stroke-width="1.2"><rect x="8" y="10" width="124" height="170" rx="12" class="f-paper"/><rect x="142" y="10" width="124" height="170" rx="12" class="f-sagesoft" fill-opacity="0.35"/><rect x="276" y="10" width="124" height="170" rx="12" class="f-sagesoft" fill-opacity="0.6"/><rect x="410" y="10" width="124" height="170" rx="12" class="f-sagesoft" fill-opacity="0.85"/><rect x="544" y="10" width="124" height="170" rx="12" class="f-sagesoft"/></g>
+<g class="f-pencil"><circle cx="36" cy="40" r="15"/><circle cx="170" cy="40" r="15"/><circle cx="304" cy="40" r="15"/><circle cx="438" cy="40" r="15"/><circle cx="572" cy="40" r="15"/></g>
+<g font-size="15" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="36" y="45">0</text><text x="170" y="45">1</text><text x="304" y="45">2</text><text x="438" y="45">3</text><text x="572" y="45">4</text></g>
+<g font-size="13.5" class="f-ink t-title"><text x="22" y="86">Pa IA</text><text x="156" y="86">IA për ide</text><text x="290" y="86">IA për</text><text x="290" y="104">përmirësim</text><text x="424" y="86">IA si</text><text x="424" y="104">bashkëpunëtor</text><text x="558" y="86">IA e lirë</text></g>
+<g font-size="11.5" class="f-soft"><text x="22" y="136">Puna është</text><text x="22" y="153">vetëm e nxënësit.</text><text x="156" y="136">Ide dhe plan,</text><text x="156" y="153">jo tekst i gatshëm.</text><text x="290" y="136">Korrigjim gjuhe</text><text x="290" y="153">dhe strukture.</text><text x="424" y="136">Drafte të</text><text x="424" y="153">përbashkëta.</text><text x="558" y="136">Çdo përdorim,</text><text x="558" y="153">me transparencë.</text></g>
+<path d="M20 205 H 650" class="f-none s-sage" stroke-width="2"/>
+<polygon points="648,199 660,205 648,211" class="f-sage"/>
+<text x="20" y="226" font-size="12" class="f-soft">më pak IA</text>
+<text x="660" y="226" font-size="12" text-anchor="end" class="f-soft">më shumë IA</text>
+</svg>
+
+<figcaption>Mësuesi zgjedh nivelin për çdo detyrë dhe ua thotë nxënësve që në fillim. Frymëzuar nga AI Assessment Scale (Perkins, Furze, Roe dhe MacVaugh).</figcaption>
+</figure>
+
+<p>Disa mënyra për t'i bërë detyrat më të vështira për t'u kopjuar me IA:</p>
+<ul>
+<li><strong>Vlerësoni procesin</strong>, jo vetëm produktin: skica, drafte, shënime.</li>
+<li><strong>Shkruani në klasë</strong> pjesën kryesore të punës.</li>
+<li><strong>Pyetni me gojë</strong>: nxënësi shpjegon me fjalët e veta çfarë ka shkruar.</li>
+<li><strong>Zgjidhni tema personale dhe lokale</strong>, që IA nuk i njeh: lagjja, familja, përvoja e klasës.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Shembull nga klasa: Histori, klasa e 12-të</p>
+<p>Në vend të esesë klasike për tranzicionin në Shqipëri pas vitit 1990, nxënësit intervistojnë një të afërm që e ka jetuar atë periudhë, shkruajnë draftin në klasë dhe e prezantojnë në 3 minuta. IA lejohet në nivelin 1, për të përgatitur pyetjet e intervistës. Por kujtimet e gjyshit dhe mënyra si i lidh nxënësi me mësimin nuk mund të gjenerohen.</p>
+</div>
+<div class="summary">
+<p class="summary__label">Me një fjali</p>
+<p>Mos e ndaloni IA-në në mënyrë të paqartë; thoni qartë sa lejohet dhe vlerësoni procesin, jo vetëm rezultatin.</p>
+</div>
+<details class="reflect">
+<summary>3 pyetje për të menduar</summary>
+<ol>
+<li>Cila nga detyrat tuaja aktuale mund të bëhet e tëra me IA në pak minuta?</li>
+<li>Cilin nivel do të zgjidhnit për detyrën tuaj të ardhshme, dhe pse?</li>
+<li>Si do të reagonit nëse dyshoni se një nxënës e ka përdorur IA-në pa leje?</li>
+</ol>
+</details>
+<h2 id="paragjykimet-dhe-drejtesia">Paragjykimet dhe drejtësia<a class="headerlink" href="#paragjykimet-dhe-drejtesia" title="Permanent link">&para;</a></h2>
+<p>IA mëson nga tekste dhe imazhe të krijuara nga njerëzit, dhe bashkë me njohuritë mëson edhe stereotipet. Nëse në tekstet e internetit mjekët janë kryesisht burra dhe infermieret gra, IA do ta përsërisë këtë model. Për më tepër, shumica e teksteve janë në anglisht, prandaj IA e njeh më pak kulturën, historinë dhe realitetin shqiptar.</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" role="img" aria-label="IA mëson nga tekstet e internetit dhe përsërit modelin më të shpeshtë, prandaj mësuesi pyet kush mungon">
+<g class="f-paper s-line" stroke-width="1.2"><rect x="30" y="30" width="120" height="80" rx="6"/><rect x="20" y="42" width="120" height="80" rx="6"/><rect x="10" y="54" width="120" height="80" rx="6"/></g>
+<g class="f-sageline"><rect x="24" y="72" width="90" height="6" rx="3"/><rect x="24" y="86" width="72" height="6" rx="3"/><rect x="24" y="100" width="84" height="6" rx="3"/><rect x="24" y="114" width="60" height="6" rx="3"/></g>
+<text x="80" y="160" text-anchor="middle" font-size="14" class="f-ink t-title">Tekstet e internetit</text>
+<text x="80" y="180" text-anchor="middle" font-size="12" class="f-soft">shumica në anglisht,</text>
+<text x="80" y="196" text-anchor="middle" font-size="12" class="f-soft">me stereotipe</text>
+<path d="M160 90 H 222" class="f-none s-sage" stroke-width="1.8"/><polygon points="220,84 231,90 220,96" class="f-sage"/>
+<rect x="236" y="50" width="140" height="80" rx="16" class="f-sage"/>
+<text x="306" y="87" text-anchor="middle" font-size="15" class="f-paper t-title">Modeli</text>
+<text x="306" y="107" text-anchor="middle" font-size="12" class="f-paper">mëson modelet</text>
+<path d="M384 90 H 440" class="f-none s-sage" stroke-width="1.8"/><polygon points="438,84 449,90 438,96" class="f-sage"/>
+<rect x="456" y="30" width="214" height="120" rx="14" class="f-paper s-line" stroke-width="1.2"/>
+<text x="472" y="54" font-size="12.5" class="f-soft">“Vizato një shkencëtar”</text>
+<g class="f-soft" opacity="0.75">
+<circle cx="492" cy="84" r="9"/><path d="M476 126 a16 18 0 0 1 32 0z"/>
+<circle cx="538" cy="84" r="9"/><path d="M522 126 a16 18 0 0 1 32 0z"/>
+<circle cx="584" cy="84" r="9"/><path d="M568 126 a16 18 0 0 1 32 0z"/>
+<circle cx="630" cy="84" r="9"/><path d="M614 126 a16 18 0 0 1 32 0z"/>
+</g>
+<g class="f-none s-ink" stroke-width="1.4"><rect x="485" y="81" width="6" height="4" rx="2"/><rect x="493" y="81" width="6" height="4" rx="2"/><rect x="531" y="81" width="6" height="4" rx="2"/><rect x="539" y="81" width="6" height="4" rx="2"/><rect x="577" y="81" width="6" height="4" rx="2"/><rect x="585" y="81" width="6" height="4" rx="2"/><rect x="623" y="81" width="6" height="4" rx="2"/><rect x="631" y="81" width="6" height="4" rx="2"/></g>
+<text x="563" y="176" text-anchor="middle" font-size="14" class="f-ink t-title">I njëjti profil, çdo herë</text>
+<text x="563" y="196" text-anchor="middle" font-size="12" class="f-soft">IA përsërit modelin më të shpeshtë</text>
+<rect x="180" y="226" width="320" height="40" rx="20" class="f-hl s-pencil"/>
+<text x="340" y="251" text-anchor="middle" font-size="14" class="f-ink t-title">Pyetja e mësuesit: kush mungon këtu?</text>
+</svg>
+
+<figcaption>IA përsërit modelin më të shpeshtë. Pyetja e mësuesit e bën të dukshëm.</figcaption>
+</figure>
+
+<p>Paragjykimet nuk duken gjithmonë qartë. Mund të fshihen te emrat e personazheve, te rolet që u jepen vajzave dhe djemve, ose te shembujt që merren gjithmonë nga qytetet e mëdha.</p>
+<div class="admonition example">
+<p class="admonition-title">Shembull nga klasa: Edukim figurativ, klasa e 7-të</p>
+<p>Nxënësit i kërkojnë një gjeneruesi imazhesh <em>"një familje shqiptare në darkë"</em>. Imazhet duken më shumë si reklama të huaja se si shtëpitë e tyre, dhe kur kërkojnë <em>"një shkencëtar"</em>, shohin pothuajse gjithmonë një burrë me syze. Kjo kthehet në një diskutim të fortë: <em>"Kush mungon? Pse? Si do ta vizatonim ne?"</em> Pastaj nxënësit krijojnë versionin e tyre.</p>
+</div>
+<div class="summary">
+<p class="summary__label">Me një fjali</p>
+<p>IA pasqyron botën që ka lexuar, me gjithë stereotipet e saj; detyra e mësuesit është t'i bëjë ato të dukshme.</p>
+</div>
+<details class="reflect">
+<summary>3 pyetje për të menduar</summary>
+<ol>
+<li>A keni vënë re ndonjë stereotip në materialet që ju ka dhënë IA?</li>
+<li>Si mund ta ktheni një përgjigje të njëanshme në mësim për nxënësit?</li>
+<li>Për cilat tema të lëndës suaj IA e njeh më pak kontekstin shqiptar?</li>
+</ol>
+</details>
+<h2 id="transparenca">Transparenca<a class="headerlink" href="#transparenca" title="Permanent link">&para;</a></h2>
+<p>Nëse kërkojmë nga nxënësit të jenë të sinqertë për përdorimin e IA-së, duhet të jemi edhe ne. Transparenca nuk do të thotë të shpjegoni çdo gjë, por të mos fshehni asgjë.</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" role="img" aria-label="Një fletë pune me shënimin përgatitur me ndihmën e IA-së dhe kontrolluar nga mësuesi, e ndarë me nxënësit, prindërit dhe kolegët">
+<rect x="30" y="16" width="220" height="250" rx="8" class="f-paper s-sage" stroke-width="1.4"/>
+<rect x="48" y="36" width="120" height="9" rx="4.5" class="f-sage"/>
+<g class="f-sageline"><rect x="48" y="64" width="180" height="6" rx="3"/><rect x="48" y="80" width="160" height="6" rx="3"/><rect x="48" y="96" width="174" height="6" rx="3"/><rect x="48" y="122" width="180" height="6" rx="3"/><rect x="48" y="138" width="140" height="6" rx="3"/><rect x="48" y="154" width="168" height="6" rx="3"/><rect x="48" y="170" width="110" height="6" rx="3"/></g>
+<rect x="42" y="208" width="196" height="46" rx="8" class="f-hl s-pencil"/>
+<text x="140" y="227" text-anchor="middle" font-size="11" class="f-ink t-title">Përgatitur me ndihmën e IA-së,</text>
+<text x="140" y="243" text-anchor="middle" font-size="11" class="f-ink t-title">kontrolluar nga mësuesi.</text>
+<g class="f-none s-sage" stroke-width="1.6"><path d="M252 140 C 290 140, 290 58, 322 58"/><path d="M252 140 H 322"/><path d="M252 140 C 290 140, 290 222, 322 222"/></g>
+<g class="f-sagesoft s-line" stroke-width="1.2"><circle cx="352" cy="58" r="27"/><circle cx="352" cy="140" r="27"/><circle cx="352" cy="222" r="27"/></g>
+<g class="f-sage"><circle cx="352" cy="51" r="6"/><path d="M341 70 a11 11 0 0 1 22 0z"/>
+<circle cx="345" cy="133" r="5.5"/><path d="M335 151 a10 10 0 0 1 20 0z"/><circle cx="360" cy="135" r="4.5"/><path d="M352 151 a8 8 0 0 1 16 0z"/>
+<path d="M338 222 l14 -10 14 10z"/><rect x="341" y="222" width="22" height="12"/></g>
+<g class="f-paper"><rect x="349" y="226" width="6" height="8"/></g>
+<g font-size="14.5" class="f-ink t-title"><text x="394" y="54">Nxënësit</text><text x="394" y="136">Prindërit</text><text x="394" y="218">Kolegët dhe drejtoria</text></g>
+<g font-size="12.5" class="f-soft"><text x="394" y="74">si e përdorni IA-në dhe sa lejohet</text><text x="394" y="156">si përdoret IA në klasë dhe pse</text><text x="394" y="238">për rregulla të përbashkëta</text></g>
+</svg>
+
+<figcaption>Një shënim i thjeshtë mjafton; më e rëndësishme është që rregullat t'i dinë të gjithë.</figcaption>
+</figure>
+
+<ul>
+<li>Në materialet e përgatitura me IA, shtoni një shënim të shkurtër: <em>"Përgatitur me ndihmën e IA-së, kontrolluar nga mësuesi."</em></li>
+<li><strong>Mos</strong> e përdorni IA-në për të vendosur nota pa e rishikuar vetë çdo vlerësim. Vendimi për notën është i juaji.</li>
+<li>Ndani me kolegët çfarë funksionon dhe çfarë jo, që shkolla të ketë rregulla të përbashkëta.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Shembull nga klasa: Muzikë, klasa e 6-të</p>
+<p>Për orën për stinët, IA ju ndihmon të shkruani vargje të thjeshta për një këngë që klasa do ta këndojë. Ua thoni hapur nxënësve: <em>"Vargjet i shkruam me ndihmën e IA-së, pastaj i ndryshova unë. Tani i përmirësojmë së bashku."</em> Nxënësit shohin që IA është mjet, jo autor, dhe mësojnë nga shembulli juaj të jenë të sinqertë.</p>
+</div>
+<div class="summary">
+<p class="summary__label">Me një fjali</p>
+<p>Transparenca ndërton besim: kur mësuesi e thotë hapur si e përdor IA-në, nxënësit mësojnë të bëjnë të njëjtën gjë.</p>
+</div>
+<details class="reflect">
+<summary>3 pyetje për të menduar</summary>
+<ol>
+<li>Si do t'ua tregonit nxënësve që një material është përgatitur me IA?</li>
+<li>Çfarë duhet të dinë prindërit për përdorimin e IA-së në klasën tuaj?</li>
+<li>Cilat rregulla të përbashkëta do të propozonit për shkollën tuaj?</li>
+</ol>
+</details>
+<h2 id="lista-e-kontrollit">Lista e kontrollit<a class="headerlink" href="#lista-e-kontrollit" title="Permanent link">&para;</a></h2>
+<p>Printojeni dhe mbajeni pranë kompjuterit. Para çdo përdorimi të IA-së me materiale shkollore:</p>
+<div class="checklist">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kërkesa ime nuk përmban emra, nota ose të dhëna personale të nxënësve.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nëse edhe nxënësit do ta përdorin mjetin, ai lejohet për moshën e tyre.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> I kam verifikuar faktet, datat, citatet dhe llogaritjet.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> E kam lexuar materialin për stereotipe dhe gabime në shqip.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nxënësit e dinë sa IA lejohet në këtë detyrë.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nuk mbështes asnjë akuzë vetëm te një detektor i IA-së.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Notat dhe vendimet për nxënësit janë të miat, jo të IA-së.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kur duhet, e kam shënuar që materiali është përgatitur me ndihmën e IA-së.</li>
+</ul>
+</div>
+<h2 id="pikat-kryesore">Pikat kryesore<a class="headerlink" href="#pikat-kryesore" title="Permanent link">&para;</a></h2>
+<div class="admonition success">
+<p class="admonition-title">Mbani mend</p>
+<ul>
+<li>IA-së i jepni detyrën, jo të dhënat e nxënësve.</li>
+<li>Mosha e nxënësve përcakton sa e përdorin vetë IA-në.</li>
+<li>Thoni qartë sa IA lejohet në çdo detyrë; detektorët nuk janë provë.</li>
+<li>Kërkoni stereotipet dhe bëjini të dukshme.</li>
+<li>Jini transparentë me nxënësit, prindërit dhe kolegët.</li>
+</ul>
+</div>
+<div class="next-page">
+<p><strong>Keni përfunduar bazat!</strong></p>
+<p>Jeni gati për trajnimin. Ndërkohë, mund të provoni promptet e gatshme për punën e përditshme.</p>
+<p><a class="md-button md-button--primary" href="../../trajnimi/">Shiko axhendën e trajnimit</a>
+<a class="md-button" href="../../prompte/">Hap bibliotekën e prompteve</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Kthehu në krye
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fundi i faqes" >
+        
+          
+          <a href="../mjetet-e-ia/" class="md-footer__link md-footer__link--prev" aria-label="E mëparshme: Mjetet kryesore të IA-së">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                E mëparshme
+              </span>
+              <div class="md-ellipsis">
+                Mjetet kryesore të IA-së
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../trajnimi/" class="md-footer__link md-footer__link--next" aria-label="Tjetër: Trajnimi">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Tjetër
+              </span>
+              <div class="md-ellipsis">
+                Trajnimi
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Evis Plaku
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.instant", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "U kopjua", "clipboard.copy": "Kopjo", "search.result.more.one": "1 m\u00eb shum\u00eb n\u00eb k\u00ebt\u00eb faqe", "search.result.more.other": "# m\u00eb shum\u00eb n\u00eb k\u00ebt\u00eb faqe", "search.result.none": "Nuk ka dokumente t\u00eb p\u00ebrputhshme", "search.result.one": "1 dokument i p\u00ebrputhsh\u00ebm", "search.result.other": "# dokumente t\u00eb p\u00ebrputhshme", "search.result.placeholder": "Shkruani p\u00ebr t\u00eb k\u00ebrkuar", "search.result.term.missing": "Mungon", "select.version": "Zgjidh versionin"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

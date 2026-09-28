@@ -1,0 +1,763 @@
+/* =============================================================
+   IA për mësuesit
+   Ndjesia: klasë e ndritshme — gjelbër e butë, letër fletoreje,
+   laps i verdhë si theks.
+   ============================================================= */
+
+/* ---------- Ngjyrat: modaliteti i ndriçuar ---------- */
+:root,
+[data-md-color-scheme="default"] {
+  --ink: #26332f;
+  --ink-soft: #5d6b66;
+  --surface: #ffffff;
+  --surface-2: #f5f8f6;
+  --sage: #4e7d6c;
+  --sage-dark: #3a6153;
+  --sage-soft: #edf4f0;
+  --sage-line: #d7e4dd;
+  --pencil: #e8b73a;
+  --pencil-soft: #fcf4dc;
+  --pencil-dark: #b7791f;
+  --highlight: rgba(240, 196, 80, 0.42);
+  --rule: rgba(92, 140, 200, 0.13);
+  --margin-line: rgba(222, 120, 110, 0.55);
+  --on-primary: #ffffff;
+  --radius: 12px;
+
+  --md-primary-fg-color: var(--sage);
+  --md-primary-fg-color--light: #6f9a8a;
+  --md-primary-fg-color--dark: var(--sage-dark);
+  --md-accent-fg-color: var(--pencil-dark);
+  --md-typeset-a-color: var(--sage-dark);
+  --md-code-bg-color: #f3f7f5;
+  --md-footer-bg-color: var(--surface-2);
+  --md-footer-bg-color--dark: var(--surface-2);
+  --md-footer-fg-color: var(--ink);
+  --md-footer-fg-color--light: var(--ink-soft);
+  --md-footer-fg-color--lighter: var(--ink-soft);
+}
+
+/* ---------- Ngjyrat: modaliteti i errët ---------- */
+[data-md-color-scheme="slate"] {
+  --ink: #e4ebe8;
+  --ink-soft: #a7b5b0;
+  --surface: #141c19;
+  --surface-2: #19231f;
+  --sage: #7fae9b;
+  --sage-dark: #9cc6b5;
+  --sage-soft: #1d2b26;
+  --sage-line: #2b3c36;
+  --pencil: #e9c35e;
+  --pencil-soft: #2e2a1c;
+  --pencil-dark: #e9c35e;
+  --highlight: rgba(233, 195, 94, 0.22);
+  --rule: rgba(140, 175, 225, 0.08);
+  --margin-line: rgba(224, 147, 139, 0.45);
+  --on-primary: #10201a;
+
+  --md-default-bg-color: var(--surface);
+  --md-primary-fg-color: var(--sage);
+  --md-primary-fg-color--dark: var(--sage-dark);
+  --md-accent-fg-color: var(--pencil);
+  --md-typeset-a-color: var(--sage-dark);
+  --md-code-bg-color: #1b2521;
+  --md-footer-bg-color: var(--surface-2);
+  --md-footer-bg-color--dark: var(--surface-2);
+  --md-footer-fg-color: var(--ink);
+  --md-footer-fg-color--light: var(--ink-soft);
+  --md-footer-fg-color--lighter: var(--ink-soft);
+}
+
+::selection { background: var(--highlight); }
+
+/* ---------- Koka dhe skedat: të lehta, si letër ---------- */
+.md-header,
+.md-tabs {
+  background-color: var(--surface);
+  color: var(--ink);
+}
+.md-header { box-shadow: 0 1px 0 var(--sage-line); }
+.md-header--shadow { box-shadow: 0 1px 0 var(--sage-line), 0 4px 14px rgba(38, 51, 47, 0.06); }
+.md-header__button.md-logo { color: var(--sage); }
+.md-header__topic:first-child { font-weight: 600; }
+
+.md-tabs { border-bottom: 1px solid var(--sage-line); }
+.md-tabs__link { color: var(--ink-soft); opacity: 1; }
+.md-tabs__link:hover { color: var(--sage-dark); }
+.md-tabs__item--active .md-tabs__link {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--pencil);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.md-search__form { background-color: var(--sage-soft); }
+.md-search__form:hover { background-color: var(--sage-line); }
+.md-search__input::placeholder,
+.md-search__icon { color: var(--ink-soft); }
+
+.md-nav__link--active { color: var(--sage-dark); font-weight: 600; }
+
+/* ---------- Tipografia ---------- */
+.md-typeset { color: var(--ink); line-height: 1.75; }
+.md-typeset h1 { color: var(--ink); font-weight: 700; letter-spacing: -0.015em; }
+.md-typeset h2 { font-weight: 600; margin-top: 2.2em; }
+.md-typeset h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  background: var(--pencil);
+}
+.md-content__inner > p,
+.md-content__inner > ul,
+.md-content__inner > ol { max-width: 72ch; }
+
+.md-typeset :not(pre) > code {
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  border-radius: 4px;
+}
+.md-typeset pre > code { border-radius: 10px; }
+
+/* ---------- Butonat ---------- */
+.md-typeset .md-button {
+  border: 1.5px solid var(--sage-dark);
+  border-radius: 999px;
+  padding: 0.55em 1.4em;
+  font-weight: 600;
+  color: var(--sage-dark);
+  background: var(--surface);
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  border-color: var(--sage-dark);
+}
+.md-typeset .md-button--primary {
+  background: var(--sage-dark);
+  color: var(--on-primary);
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: var(--on-primary);
+}
+.md-typeset a:focus-visible,
+.md-typeset .md-button:focus-visible {
+  outline: 2px solid var(--pencil);
+  outline-offset: 3px;
+}
+
+/* ---------- Kreu: letër me pika (si fletore) + titull i nënvizuar me marker ---------- */
+.md-typeset .hero {
+  background-color: var(--sage-soft);
+  background-image: radial-gradient(var(--sage-line) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  border: 1px solid var(--sage-line);
+  border-radius: 20px;
+  padding: 3.2rem 2.8rem 2.8rem;
+  margin: 0 0 2.5rem;
+}
+.md-typeset .hero h1 {
+  display: inline;
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  background-image: linear-gradient(transparent 60%, var(--highlight) 60%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.md-typeset .hero .headerlink { display: none; }
+.md-typeset .hero p {
+  max-width: 60ch;
+  margin: 1.2rem 0 1.6rem;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+.md-typeset .hero .md-button { margin: 0.3rem 0.5rem 0 0; }
+
+@media screen and (max-width: 600px) {
+  .md-typeset .hero { padding: 2rem 1.4rem; }
+  .md-typeset .hero h1 { font-size: 1.8rem; }
+}
+
+/* ---------- Kartat e rrjetit ---------- */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.1rem 1.2rem;
+  transition: border-color 0.15s;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--sage);
+  box-shadow: none;
+}
+.md-typeset .grid.cards > ul > li > hr {
+  border-color: var(--sage-line);
+  margin: 0.6rem 0;
+}
+.md-typeset .grid.cards .lg { color: var(--sage); }
+.md-typeset .grid.cards.home-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+}
+
+/* ---------- Shënimet (admonitions) ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.76rem;
+  border-width: 1px;
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.success,
+.md-typeset details.question { border-color: var(--sage-line); }
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .question > summary { background: var(--sage-soft); }
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .success > .admonition-title::before,
+.md-typeset .question > summary::before { background-color: var(--sage); }
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip { border-color: var(--pencil); }
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary { background: var(--pencil-soft); }
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before { background-color: var(--pencil-dark); }
+
+/* ---------- Tabelat ---------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: none;
+  font-size: 0.78rem;
+}
+.md-typeset table:not([class]) th {
+  background: var(--sage-soft);
+  color: var(--ink);
+  font-weight: 600;
+}
+.md-typeset table:not([class]) td { border-top: 1px solid var(--sage-line); }
+
+/* ---------- Skedat e përmbajtjes (nivelet) ---------- */
+.md-typeset .tabbed-labels::before { background: var(--pencil); }
+.md-typeset .tabbed-labels > label:hover { color: var(--sage-dark); }
+
+/* ---------- Kartat e prompteve: kartelë me vija fletoreje ---------- */
+.md-typeset .prompt-card {
+  position: relative;
+  background-color: var(--surface);
+  background-image: repeating-linear-gradient(
+    to bottom, transparent 0, transparent 27px, var(--rule) 27px, var(--rule) 28px);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(38, 51, 47, 0.05), 0 8px 20px -12px rgba(38, 51, 47, 0.2);
+  padding: 0.8rem 1.5rem 1rem 2.6rem;
+  margin: 2rem 0;
+}
+.md-typeset .prompt-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.4rem;
+  width: 2px;
+  background: var(--margin-line);
+}
+.md-typeset .prompt-card h3 { margin-top: 0.3rem; }
+.md-typeset .prompt-card .highlight code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ---------- Etiketat e niveleve ---------- */
+.md-typeset .tag {
+  display: inline-block;
+  margin: 0 0.3rem 0.3rem 0;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  background: var(--tag-bg, var(--sage-soft));
+  color: var(--tag-fg, var(--sage-dark));
+}
+.md-typeset .tag--fillor     { --tag-bg: #e2f3e8; --tag-fg: #2f6b47; }
+.md-typeset .tag--ulet       { --tag-bg: #e1ecf8; --tag-fg: #2c5b8a; }
+.md-typeset .tag--larte      { --tag-bg: #eee6f6; --tag-fg: #5e3f85; }
+.md-typeset .tag--te-gjitha  { --tag-bg: #eef0ef; --tag-fg: #4a5552; }
+[data-md-color-scheme="slate"] .md-typeset .tag--fillor    { --tag-bg: #1f3428; --tag-fg: #9fd6b3; }
+[data-md-color-scheme="slate"] .md-typeset .tag--ulet      { --tag-bg: #1e2c3d; --tag-fg: #a3c4ea; }
+[data-md-color-scheme="slate"] .md-typeset .tag--larte     { --tag-bg: #2c2338; --tag-fg: #cdb5ea; }
+[data-md-color-scheme="slate"] .md-typeset .tag--te-gjitha { --tag-bg: #252b29; --tag-fg: #c2ccc8; }
+
+/* ---------- Fundi i faqes ---------- */
+.md-footer { border-top: 1px solid var(--sage-line); }
+
+/* ---------- Lëvizja e reduktuar ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ---------- Printimi: fletë të pastra për mësuesit ---------- */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none !important; }
+  .md-typeset .prompt-card { break-inside: avoid; box-shadow: none; }
+}
+
+
+/* =============================================================
+   Faza 2: blloqet e përmbajtjes
+   ============================================================= */
+
+/* ---------- Ngjyra shtesë ---------- */
+:root,
+[data-md-color-scheme="default"] {
+  --red-pen: #d6453d;
+  --eraser: #efb3ae;
+  --sky: #3b6fb6;
+  --sky-soft: #e9f1fa;
+  --sky-line: #cddff2;
+  --md-admonition-icon--reflect: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>');
+}
+[data-md-color-scheme="slate"] {
+  --red-pen: #ef8a82;
+  --eraser: #b9807b;
+  --sky: #a3c4ea;
+  --sky-soft: #1c2735;
+  --sky-line: #2a3a4f;
+}
+
+/* ---------- Ngjyrat brenda diagrameve SVG ---------- */
+.f-ink { fill: var(--ink); }
+.f-soft { fill: var(--ink-soft); }
+.f-paper { fill: var(--surface); }
+.f-sage { fill: var(--sage); }
+.f-sagesoft { fill: var(--sage-soft); }
+.f-sageline { fill: var(--sage-line); }
+.f-pencil { fill: var(--pencil); }
+.f-hl { fill: var(--highlight); }
+.f-red { fill: var(--red-pen); }
+.f-eraser { fill: var(--eraser); }
+.f-none { fill: none; }
+.s-line { stroke: var(--sage-line); }
+.s-sage { stroke: var(--sage); }
+.s-soft { stroke: var(--ink-soft); }
+.s-ink { stroke: var(--ink); }
+.s-red { stroke: var(--red-pen); }
+.s-rule { stroke: var(--rule); }
+.s-pencil { stroke: var(--pencil); }
+.s-paper { stroke: var(--surface); }
+svg text { font-family: inherit; }
+.t-title { font-weight: 600; }
+
+/* ---------- Diagramet ---------- */
+.md-typeset figure.diagram {
+  width: 100%;
+  max-width: 680px;
+  margin: 2rem auto;
+}
+.md-typeset figure.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.md-typeset figure.diagram figcaption {
+  max-width: 60ch;
+  margin-top: 0.7rem;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Kreu me ilustrim ---------- */
+.md-typeset .hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.md-typeset .hero__art svg {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 900px) {
+  .md-typeset .hero { grid-template-columns: 1fr; }
+  .md-typeset .hero__art { display: none; }
+}
+
+/* ---------- Rezultatet e të nxënit ---------- */
+.md-typeset .outcomes ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem 2rem;
+  max-width: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.md-typeset .outcomes ul li {
+  position: relative;
+  margin: 0;
+  padding-left: 2.3rem;
+}
+.md-typeset .outcomes ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+/* ---------- Hapat (sekuencë e vërtetë) ---------- */
+.md-typeset .steps ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+  max-width: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+.md-typeset .steps ol li {
+  position: relative;
+  margin: 0;
+  padding: 3.4rem 1.3rem 1.1rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  counter-increment: step;
+}
+.md-typeset .steps ol li::before {
+  content: counter(step);
+  position: absolute;
+  top: 1.1rem;
+  left: 1.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--pencil);
+  color: #1d1d1d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-align: center;
+}
+.md-typeset .steps ol li p { margin: 0.35rem 0; }
+.md-typeset .steps .step__time { font-size: 0.7rem; color: var(--ink-soft); }
+
+/* ---------- Metadata e faqes ---------- */
+.md-typeset .page-meta {
+  margin-top: -0.4rem;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Me një fjali ---------- */
+.md-typeset .summary {
+  position: relative;
+  margin: 2.4rem 0 1rem;
+  padding: 1.2rem 1.6rem 1.3rem 3.8rem;
+  border-radius: var(--radius);
+  background: var(--pencil-soft);
+}
+.md-typeset .summary::before {
+  content: "\201C";
+  position: absolute;
+  left: 1.2rem;
+  top: 0.5rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--pencil-dark);
+}
+.md-typeset .summary .summary__label {
+  margin: 0 0 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--pencil-dark);
+}
+.md-typeset .summary p:not(.summary__label) {
+  max-width: 60ch;
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* ---------- 3 pyetje për të menduar ---------- */
+.md-typeset .admonition.reflect,
+.md-typeset details.reflect {
+  border-color: var(--sage-line);
+  background-color: var(--surface);
+  background-image: repeating-linear-gradient(
+    to bottom, transparent 0, transparent 27px, var(--rule) 27px, var(--rule) 28px);
+}
+.md-typeset .reflect > .admonition-title,
+.md-typeset .reflect > summary { background-color: var(--sage-soft); }
+.md-typeset .reflect > .admonition-title::before,
+.md-typeset .reflect > summary::before {
+  background-color: var(--sage);
+  -webkit-mask-image: var(--md-admonition-icon--reflect);
+  mask-image: var(--md-admonition-icon--reflect);
+}
+.md-typeset .reflect > summary::after { color: var(--sage); }
+.md-typeset .reflect ol { margin-top: 0.8rem; }
+.md-typeset .reflect ol li { margin-bottom: 0.4rem; }
+
+/* ---------- Shembull nga klasa ---------- */
+.md-typeset .admonition.example,
+.md-typeset details.example { border-color: var(--sky-line); }
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary { background-color: var(--sky-soft); }
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before { background-color: var(--sky); }
+
+/* ---------- Hapi tjetër ---------- */
+.md-typeset .next-page {
+  margin: 2.8rem 0 1rem;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--sage-soft);
+}
+.md-typeset .next-page p { margin: 0.25rem 0; }
+.md-typeset .next-page .md-button { margin-top: 0.6rem; }
+
+/* ---------- Lista e kontrollit (për printim) ---------- */
+.md-typeset .checklist {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem 0.6rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.md-typeset .checklist .task-list-item { margin-bottom: 0.6rem; }
+@media print {
+  .md-typeset .checklist { break-inside: avoid; border-color: #999; }
+}
+
+/* ---------- Kartat e leximeve ---------- */
+.md-typeset .grid.cards .card-question {
+  font-style: italic;
+  color: var(--ink);
+}
+.md-typeset .grid.cards.reading-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+
+/* ---------- Fjalori (lista e përkufizimeve) ---------- */
+.md-typeset dl dt {
+  margin-top: 1.6em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.md-typeset dl dt em {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.md-typeset dl dd {
+  margin: 0.4rem 0 0;
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  border-left: 3px solid var(--sage-line);
+}
+.md-typeset dl dd p { margin: 0.5em 0; }
+[dir="ltr"] .md-typeset dl dd { margin-left: 0; }
+
+/* ---------- Pyetjet e shpeshta ---------- */
+.md-typeset .question > summary::after { color: var(--sage); }
+.md-typeset details.question:focus-within { box-shadow: none; }
+.md-typeset details.question { margin: 0.7rem 0; }
+
+/* ---------- Faza 3: trajnimi ---------- */
+:root,
+[data-md-color-scheme="default"] { --red-soft: #fbeceb; }
+[data-md-color-scheme="slate"] { --red-soft: #2e1f1e; }
+.f-skysoft { fill: var(--sky-soft); }
+.s-sky { stroke: var(--sky-line); }
+
+/* Kujdes (warning) në tonet e stilolapsit të kuq */
+.md-typeset .admonition.warning,
+.md-typeset details.warning { border-color: var(--red-pen); }
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary { background-color: var(--red-soft); }
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before { background-color: var(--red-pen); }
+
+/* Etiketa e vogël mbi kutinë e promptit */
+.md-typeset .prompt-card .prompt-label {
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* Hapa kompaktë (p.sh. 5 hapat e demos) */
+.md-typeset .steps.compact ol {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
+  gap: 0.6rem;
+}
+.md-typeset .steps.compact ol li {
+  padding: 2.9rem 0.9rem 0.9rem;
+  font-size: 0.74rem;
+  line-height: 1.4;
+}
+.md-typeset .steps.compact ol li::before {
+  top: 0.9rem;
+  left: 0.9rem;
+}
+
+/* ---------- Misionet ---------- */
+.md-typeset .mission {
+  margin: 2.5rem 0;
+  padding: 0.2rem 1.6rem 1.2rem;
+  border: 1px solid var(--sage-line);
+  border-radius: 18px;
+  background: var(--surface);
+}
+.md-typeset .mission > h2:first-child { margin-top: 1.2rem; }
+.md-typeset .mission h3 { margin-top: 1.8rem; }
+.md-typeset .mission .task-time {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  font-size: 0.68rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.md-typeset .mission .done-when {
+  margin: 0.8rem 0;
+  padding: 0.5rem 0.9rem;
+  border-left: 3px solid var(--pencil);
+  background: var(--pencil-soft);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.78rem;
+}
+@media screen and (max-width: 600px) {
+  .md-typeset .mission { padding: 0.2rem 0.9rem 1rem; }
+}
+@media print {
+  .md-typeset .mission { break-before: page; border: none; padding: 0; }
+}
+.md-typeset .grid.cards.three-up {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+}
+
+/* ---------- Angazhimi "Java 1" ---------- */
+.md-typeset .commitment {
+  position: relative;
+  margin: 1.8rem 0;
+  padding: 1rem 1.6rem 1.2rem 2.8rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+  background-image: repeating-linear-gradient(
+    to bottom, transparent 0, transparent 35px, var(--rule) 35px, var(--rule) 36px);
+  box-shadow: 0 1px 2px rgba(38, 51, 47, 0.05), 0 8px 20px -12px rgba(38, 51, 47, 0.2);
+}
+.md-typeset .commitment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.5rem;
+  width: 2px;
+  background: var(--margin-line);
+}
+.md-typeset .commitment .commitment__title {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.md-typeset .commitment p { margin: 0.9rem 0; max-width: none; }
+.md-typeset .commitment .blank {
+  display: inline-block;
+  min-width: 12rem;
+  margin-left: 0.3rem;
+  border-bottom: 1.5px dashed var(--ink-soft);
+  vertical-align: bottom;
+  height: 1.1em;
+}
+@media print {
+  .md-typeset .commitment { box-shadow: none; break-inside: avoid; }
+}
+
+/* ---------- Biblioteka: fraza të shkurtra ---------- */
+.md-typeset .phrase-list .highlight { margin: 0.45rem 0; }
+.md-typeset .phrase-list .highlight code { white-space: pre-wrap; }
+.md-typeset .prompt-card .card-link { margin: 0.2rem 0 0.4rem; font-size: 0.74rem; }
+
+/* ---------- Kartela për printim ---------- */
+.md-typeset .cheatsheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+}
+.md-typeset .cheatsheet .cheat {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--sage-line);
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+.md-typeset .cheatsheet .cheat strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.78rem;
+}
+.md-typeset .cheatsheet .cheat code {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  white-space: normal;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+.md-typeset .cheatsheet .cheat p { margin: 0; }
+.md-typeset .sheet-intro { font-size: 0.74rem; color: var(--ink-soft); }
+@media print {
+  .md-typeset .cheatsheet { grid-template-columns: 1fr 1fr; gap: 0.25cm; margin: 0.3cm 0 0; }
+  .md-typeset .cheatsheet .cheat {
+    break-inside: avoid;
+    padding: 0.2cm 0.3cm;
+    border-color: #999;
+    font-size: 8.5pt;
+  }
+  .md-typeset .cheatsheet .cheat strong { font-size: 9pt; margin-bottom: 0.1cm; }
+  .md-typeset .cheatsheet .cheat code { font-size: 7.8pt; padding: 0.12cm 0.18cm; line-height: 1.4; }
+  .md-typeset .sheet-intro { font-size: 8.5pt; }
+  .md-content h1 { font-size: 16pt; margin: 0 0 0.2cm; }
+  .md-footer, .md-source-file { display: none !important; }
+  html, body, .md-container, .md-main { min-height: 0 !important; height: auto !important; }
+  .md-main__inner { margin-top: 0 !important; padding-bottom: 0 !important; }
+}
