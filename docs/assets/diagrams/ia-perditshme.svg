@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 190" role="img" aria-label="IA në jetën e përditshme: tastiera, hartat, përkthimi, filtri i spam-it, rekomandimet">
+<g class="f-sagesoft s-line" stroke-width="1.2"><circle cx="68" cy="66" r="42"/><circle cx="204" cy="66" r="42"/><circle cx="340" cy="66" r="42"/><circle cx="476" cy="66" r="42"/><circle cx="612" cy="66" r="42"/></g>
+<rect x="46" y="54" width="44" height="26" rx="4" class="f-paper s-sage" stroke-width="1.6"/>
+<g class="f-sage"><rect x="51" y="59" width="6" height="5" rx="1"/><rect x="60" y="59" width="6" height="5" rx="1"/><rect x="69" y="59" width="6" height="5" rx="1"/><rect x="78" y="59" width="6" height="5" rx="1"/><rect x="55" y="68" width="26" height="5" rx="1"/></g>
+<rect x="52" y="40" width="32" height="10" rx="5" class="f-hl"/>
+<path d="M204 90 C 190 72, 186 66, 186 58 a18 18 0 0 1 36 0 c0 8 -4 14 -18 32z" class="f-sage"/>
+<circle cx="204" cy="58" r="7" class="f-paper"/>
+<g class="f-sage" font-size="20" font-weight="700"><text x="314" y="73">A</text><text x="352" y="73">Ë</text></g>
+<path d="M332 66 h14 m-5 -5 l5 5 -5 5" class="f-none s-sage" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="454" y="50" width="44" height="30" rx="4" class="f-paper s-sage" stroke-width="1.6"/>
+<polyline points="455,52 476,68 497,52" class="f-none s-sage" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="496" cy="48" r="9" class="f-red"/>
+<path d="M492 44 l8 8 m0 -8 l-8 8" class="s-paper" stroke-width="2" stroke-linecap="round"/>
+<rect x="588" y="48" width="48" height="34" rx="6" class="f-sage"/>
+<polygon points="605,56 605,74 621,65" class="f-paper"/>
+<g font-size="14" class="f-ink t-title" text-anchor="middle"><text x="68" y="140">Tastiera</text><text x="204" y="140">Hartat</text><text x="340" y="140">Përkthimi</text><text x="476" y="140">Filtri i spam-it</text><text x="612" y="140">Rekomandimet</text></g>
+<g font-size="12" class="f-soft" text-anchor="middle"><text x="68" y="160">sugjeron fjalën</text><text x="204" y="160">gjen rrugën</text><text x="340" y="160">mes gjuhëve</text><text x="476" y="160">ndan emailet</text><text x="612" y="160">video dhe muzikë</text></g>
+</svg>

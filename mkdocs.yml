@@ -57,6 +57,9 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
+  - pymdownx.snippets:
+      base_path: [docs]
+      check_paths: true
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.mark

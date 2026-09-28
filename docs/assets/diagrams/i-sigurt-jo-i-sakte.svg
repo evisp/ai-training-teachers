@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Një përgjigje e IA-së me një burim të shpikur, të rrethuar me stilolaps të kuq. Ton i sigurt nuk do të thotë përgjigje e saktë.">
+<rect x="40" y="24" width="430" height="176" rx="16" class="f-paper s-line" stroke-width="1.5"/>
+<path d="M66 40 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" class="f-pencil"/>
+<g font-size="16" class="f-ink"><text x="90" y="66">Sipas studimit të</text><text x="90" y="100">Prof. A. Hoxha (2019),</text><text x="90" y="134">73% e nxënësve mësojnë më mirë</text><text x="90" y="160">me video sesa me tekst.</text></g>
+<ellipse cx="176" cy="94" rx="104" ry="21" class="f-none s-red" stroke-width="2.4" transform="rotate(-3 176 94)"/>
+<path d="M282 88 C 360 60, 420 60, 498 72" class="f-none s-red" stroke-width="2"/>
+<polygon points="498,66 510,73 497,78" class="f-red"/>
+<text x="518" y="72" font-size="16" class="f-red t-title">Burim i shpikur</text>
+<text x="518" y="94" font-size="13" class="f-soft">Ky studim nuk ekziston.</text>
+<rect x="120" y="242" width="170" height="42" rx="21" class="f-sagesoft s-line"/>
+<text x="205" y="269" text-anchor="middle" font-size="15" class="f-ink t-title">Ton i sigurt</text>
+<text x="340" y="273" text-anchor="middle" font-size="28" class="f-red t-title">≠</text>
+<rect x="390" y="242" width="190" height="42" rx="21" class="f-hl s-pencil"/>
+<text x="485" y="269" text-anchor="middle" font-size="15" class="f-ink t-title">Përgjigje e saktë</text>
+</svg>

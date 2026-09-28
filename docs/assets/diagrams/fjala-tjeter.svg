@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-label="Modeli parashikon fjalën e radhës: lexojnë 58 për qind, shkruajnë 22, flasin 9, këndojnë 3">
+<text x="496" y="52" text-anchor="end" font-size="20" class="f-ink">Nxënësit hapën librat dhe filluan të</text>
+<rect x="508" y="28" width="112" height="34" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="564" y="52" text-anchor="middle" font-size="20" class="f-ink t-title">?</text>
+<text x="40" y="96" font-size="14" class="f-soft">Modeli llogarit sa e mundshme është secila fjalë e radhës:</text>
+<g font-size="15" text-anchor="end" class="f-ink"><text x="170" y="138">lexojnë</text><text x="170" y="183">shkruajnë</text><text x="170" y="228">flasin</text><text x="170" y="273">këndojnë</text></g>
+<rect x="185" y="119" width="380" height="26" rx="6" class="f-sagesoft"/>
+<rect x="185" y="164" width="380" height="26" rx="6" class="f-sagesoft"/>
+<rect x="185" y="209" width="380" height="26" rx="6" class="f-sagesoft"/>
+<rect x="185" y="254" width="380" height="26" rx="6" class="f-sagesoft"/>
+<rect x="185" y="119" width="220" height="26" rx="6" class="f-sage"/>
+<rect x="185" y="164" width="84" height="26" rx="6" class="f-sageline"/>
+<rect x="185" y="209" width="34" height="26" rx="6" class="f-sageline"/>
+<rect x="185" y="254" width="12" height="26" rx="6" class="f-sageline"/>
+<g font-size="14" class="f-ink"><text x="415" y="138" class="t-title">58%</text><text x="279" y="183">22%</text><text x="229" y="228">9%</text><text x="207" y="273">3%</text></g>
+<rect x="580" y="119" width="84" height="26" rx="13" class="f-hl"/>
+<text x="622" y="137" text-anchor="middle" font-size="13" class="f-ink t-title">zgjidhet</text>
+<text x="40" y="316" font-size="14" class="f-soft">…dhe procesi përsëritet për çdo fjalë, derisa përgjigjja të jetë e plotë.</text>
+</svg>
