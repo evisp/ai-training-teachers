@@ -6,47 +6,47 @@ hide:
 
 <div class="hero" markdown>
 
-# AI for Teachers
+# IA për mësuesit
 
-A practical guide to using artificial intelligence in the classroom, for elementary, middle and high school teachers.
+Një udhëzues praktik për përdorimin e inteligjencës artificiale në klasë, për mësuesit e arsimit fillor, të mesëm të ulët dhe të mesëm të lartë.
 
-[Start with the fundamentals](fundamentals/index.md){ .md-button .md-button--primary }
-[Open the prompt library](prompts/index.md){ .md-button }
+[Fillo me bazat](bazat/index.md){ .md-button .md-button--primary }
+[Hap bibliotekën e prompteve](prompte/index.md){ .md-button }
 
 </div>
 
-<div class="grid cards" markdown>
+<div class="grid cards home-cards" markdown>
 
--   :material-book-open-variant:{ .lg .middle } **Fundamentals**
-
-    ---
-
-    What AI is, which tools matter for teachers, and how to use them responsibly.
-
-    [Read the fundamentals](fundamentals/index.md)
-
--   :material-human-male-board:{ .lg .middle } **Training**
+-   :material-book-open-variant:{ .lg .middle } **Bazat**
 
     ---
 
-    Agenda, session materials and hands-on activities from the workshop.
+    Çfarë është IA, cilat mjete vlejnë për mësuesit dhe si t'i përdorim me përgjegjësi.
 
-    [See the training](training/index.md)
+    [Lexo bazat](bazat/index.md)
 
--   :material-text-box-edit-outline:{ .lg .middle } **Prompt library**
-
-    ---
-
-    Ready-made prompts for lesson planning, assessment, feedback and more.
-
-    [Browse prompts](prompts/index.md)
-
--   :material-bookshelf:{ .lg .middle } **Resources**
+-   :material-human-male-board:{ .lg .middle } **Trajnimi**
 
     ---
 
-    Glossary of AI terms and answers to common questions.
+    Axhenda, materialet e sesioneve dhe aktivitetet praktike të punëtorisë.
 
-    [Open resources](resources/glossary.md)
+    [Shiko trajnimin](trajnimi/index.md)
+
+-   :material-text-box-edit-outline:{ .lg .middle } **Biblioteka e prompteve**
+
+    ---
+
+    Prompte të gatshme për planifikimin e mësimit, vlerësimin, komentet dhe më shumë.
+
+    [Shfleto promptet](prompte/index.md)
+
+-   :material-bookshelf:{ .lg .middle } **Burime**
+
+    ---
+
+    Fjalor i termave të IA-së dhe përgjigje për pyetjet më të shpeshta.
+
+    [Hap burimet](burime/fjalori.md)
 
 </div>

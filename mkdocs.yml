@@ -1,14 +1,14 @@
-site_name: AI for Teachers
-site_description: A practical guide to using AI in the classroom
+site_name: IA për mësuesit
+site_description: Udhëzues praktik për përdorimin e inteligjencës artificiale në klasë
 site_author: Evis Plaku
 site_url: https://evisp.github.io/ai-training-teachers/
 repo_url: https://github.com/evisp/ai-training-teachers
 repo_name: evisp/ai-training-teachers
-copyright: Evis Plaku &copy; 2026
+copyright: "&copy; 2026 Evis Plaku"
 
 theme:
   name: material
-  language: en
+  language: custom
   custom_dir: overrides
   font:
     text: Lexend
@@ -20,14 +20,14 @@ theme:
       accent: custom
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: Kalo në modalitetin e errët
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: Kalo në modalitetin e ndriçuar
   icon:
     logo: material/school-outline
     repo: fontawesome/brands/github
@@ -78,25 +78,25 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: index.md
-  - Fundamentals:
-      - fundamentals/index.md
-      - What is AI: fundamentals/what-is-ai.md
-      - Key AI tools: fundamentals/ai-tools.md
-      - AI ethics: fundamentals/ai-ethics.md
-  - Training:
-      - training/index.md
-      - Session 1: training/session-1.md
-      - Session 2: training/session-2.md
-      - Activities: training/activities.md
-  - Prompt library:
-      - prompts/index.md
-      - Lesson planning: prompts/lesson-planning.md
-      - Differentiation: prompts/differentiation.md
-      - Assessment: prompts/assessment.md
-      - Feedback and rubrics: prompts/feedback-rubrics.md
-      - Communication: prompts/communication.md
-      - Classroom activities: prompts/classroom-activities.md
-  - Resources:
-      - Glossary: resources/glossary.md
-      - FAQ: resources/faq.md
+  - Kreu: index.md
+  - Bazat:
+      - bazat/index.md
+      - Çfarë është IA: bazat/cfare-eshte-ia.md
+      - Mjetet kryesore të IA-së: bazat/mjetet-e-ia.md
+      - Etika e IA-së: bazat/etika-e-ia.md
+  - Trajnimi:
+      - trajnimi/index.md
+      - Sesioni 1: trajnimi/sesioni-1.md
+      - Sesioni 2: trajnimi/sesioni-2.md
+      - Aktivitete praktike: trajnimi/aktivitete.md
+  - Biblioteka e prompteve:
+      - prompte/index.md
+      - Planifikimi i mësimit: prompte/planifikimi-i-mesimit.md
+      - Diferencimi: prompte/diferencimi.md
+      - Vlerësimi: prompte/vleresimi.md
+      - Rubrikat dhe komentet: prompte/rubrikat-dhe-komentet.md
+      - Komunikimi: prompte/komunikimi.md
+      - Aktivitete në klasë: prompte/aktivitete-ne-klase.md
+  - Burime:
+      - Fjalori: burime/fjalori.md
+      - Pyetje të shpeshta: burime/pyetje-te-shpeshta.md

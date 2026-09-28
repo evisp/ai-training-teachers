@@ -1,10 +1,10 @@
-# AI for Teachers
+# IA për mësuesit
 
-Training materials on AI for elementary, middle and high school teachers.
+Materiale trajnimi për inteligjencën artificiale, për mësuesit e arsimit fillor dhe të mesëm.
 
-Live site: https://evisp.github.io/ai-training-teachers/
+Faqja: https://evisp.github.io/ai-training-teachers/
 
-## Run locally
+## Si ta hapni në kompjuter
 
 ```bash
 python3 -m venv .venv
@@ -13,4 +13,4 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-Pushing to `main` publishes the site automatically via GitHub Actions.
+Çdo `push` në `main` e publikon faqen automatikisht.

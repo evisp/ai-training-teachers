@@ -1,0 +1,8 @@
+{% import "partials/languages/sq.html" as language %}
+{% macro t(key) %}{{ {
+  "language": "sq",
+  "search.placeholder": "Kërko",
+  "search.result.placeholder": "Shkruani për të kërkuar",
+  "clipboard.copy": "Kopjo",
+  "clipboard.copied": "U kopjua"
+}[key] or language.t(key) }}{% endmacro %}

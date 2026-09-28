@@ -1,109 +1,318 @@
-/* Palette: chalkboard green, pencil yellow, notebook margin red, ruled-line blue */
-:root {
-  --md-primary-fg-color: #24453b;
-  --md-primary-fg-color--light: #3a6657;
-  --md-primary-fg-color--dark: #172e27;
-  --md-accent-fg-color: #e0a400;
-  --chalk: #f4f6f2;
-  --pencil: #f2b705;
-  --margin-red: #d9534f;
-  --rule-blue: rgba(70, 120, 190, 0.14);
-  --card-bg: #ffffff;
+/* =============================================================
+   IA për mësuesit
+   Ndjesia: klasë e ndritshme — gjelbër e butë, letër fletoreje,
+   laps i verdhë si theks.
+   ============================================================= */
+
+/* ---------- Ngjyrat: modaliteti i ndriçuar ---------- */
+:root,
+[data-md-color-scheme="default"] {
+  --ink: #26332f;
+  --ink-soft: #5d6b66;
+  --surface: #ffffff;
+  --surface-2: #f5f8f6;
+  --sage: #4e7d6c;
+  --sage-dark: #3a6153;
+  --sage-soft: #edf4f0;
+  --sage-line: #d7e4dd;
+  --pencil: #e8b73a;
+  --pencil-soft: #fcf4dc;
+  --pencil-dark: #b7791f;
+  --highlight: rgba(240, 196, 80, 0.42);
+  --rule: rgba(92, 140, 200, 0.13);
+  --margin-line: rgba(222, 120, 110, 0.55);
+  --on-primary: #ffffff;
+  --radius: 12px;
+
+  --md-primary-fg-color: var(--sage);
+  --md-primary-fg-color--light: #6f9a8a;
+  --md-primary-fg-color--dark: var(--sage-dark);
+  --md-accent-fg-color: var(--pencil-dark);
+  --md-typeset-a-color: var(--sage-dark);
+  --md-code-bg-color: #f3f7f5;
+  --md-footer-bg-color: var(--surface-2);
+  --md-footer-bg-color--dark: var(--surface-2);
+  --md-footer-fg-color: var(--ink);
+  --md-footer-fg-color--light: var(--ink-soft);
+  --md-footer-fg-color--lighter: var(--ink-soft);
 }
 
+/* ---------- Ngjyrat: modaliteti i errët ---------- */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #1b3029;
-  --md-accent-fg-color: #f2b705;
-  --md-default-bg-color: #121a17;
-  --rule-blue: rgba(120, 160, 220, 0.10);
-  --card-bg: #18231f;
+  --ink: #e4ebe8;
+  --ink-soft: #a7b5b0;
+  --surface: #141c19;
+  --surface-2: #19231f;
+  --sage: #7fae9b;
+  --sage-dark: #9cc6b5;
+  --sage-soft: #1d2b26;
+  --sage-line: #2b3c36;
+  --pencil: #e9c35e;
+  --pencil-soft: #2e2a1c;
+  --pencil-dark: #e9c35e;
+  --highlight: rgba(233, 195, 94, 0.22);
+  --rule: rgba(140, 175, 225, 0.08);
+  --margin-line: rgba(224, 147, 139, 0.45);
+  --on-primary: #10201a;
+
+  --md-default-bg-color: var(--surface);
+  --md-primary-fg-color: var(--sage);
+  --md-primary-fg-color--dark: var(--sage-dark);
+  --md-accent-fg-color: var(--pencil);
+  --md-typeset-a-color: var(--sage-dark);
+  --md-code-bg-color: #1b2521;
+  --md-footer-bg-color: var(--surface-2);
+  --md-footer-bg-color--dark: var(--surface-2);
+  --md-footer-fg-color: var(--ink);
+  --md-footer-fg-color--light: var(--ink-soft);
+  --md-footer-fg-color--lighter: var(--ink-soft);
 }
 
-/* Typography */
-.md-typeset { line-height: 1.7; }
-.md-typeset h1 { font-weight: 700; letter-spacing: -0.015em; }
-.md-typeset h2 { font-weight: 600; margin-top: 2.2em; }
-.md-typeset p, .md-typeset ul, .md-typeset ol { max-width: 72ch; }
+::selection { background: var(--highlight); }
 
-/* Home hero: a plain chalkboard */
+/* ---------- Koka dhe skedat: të lehta, si letër ---------- */
+.md-header,
+.md-tabs {
+  background-color: var(--surface);
+  color: var(--ink);
+}
+.md-header { box-shadow: 0 1px 0 var(--sage-line); }
+.md-header--shadow { box-shadow: 0 1px 0 var(--sage-line), 0 4px 14px rgba(38, 51, 47, 0.06); }
+.md-header__button.md-logo { color: var(--sage); }
+.md-header__topic:first-child { font-weight: 600; }
+
+.md-tabs { border-bottom: 1px solid var(--sage-line); }
+.md-tabs__link { color: var(--ink-soft); opacity: 1; }
+.md-tabs__link:hover { color: var(--sage-dark); }
+.md-tabs__item--active .md-tabs__link {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--pencil);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.md-search__form { background-color: var(--sage-soft); }
+.md-search__form:hover { background-color: var(--sage-line); }
+.md-search__input::placeholder,
+.md-search__icon { color: var(--ink-soft); }
+
+.md-nav__link--active { color: var(--sage-dark); font-weight: 600; }
+
+/* ---------- Tipografia ---------- */
+.md-typeset { color: var(--ink); line-height: 1.75; }
+.md-typeset h1 { color: var(--ink); font-weight: 700; letter-spacing: -0.015em; }
+.md-typeset h2 { font-weight: 600; margin-top: 2.2em; }
+.md-typeset h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  background: var(--pencil);
+}
+.md-content__inner > p,
+.md-content__inner > ul,
+.md-content__inner > ol { max-width: 72ch; }
+
+.md-typeset :not(pre) > code {
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  border-radius: 4px;
+}
+.md-typeset pre > code { border-radius: 10px; }
+
+/* ---------- Butonat ---------- */
+.md-typeset .md-button {
+  border: 1.5px solid var(--sage-dark);
+  border-radius: 999px;
+  padding: 0.55em 1.4em;
+  font-weight: 600;
+  color: var(--sage-dark);
+  background: var(--surface);
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  border-color: var(--sage-dark);
+}
+.md-typeset .md-button--primary {
+  background: var(--sage-dark);
+  color: var(--on-primary);
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: var(--on-primary);
+}
+.md-typeset a:focus-visible,
+.md-typeset .md-button:focus-visible {
+  outline: 2px solid var(--pencil);
+  outline-offset: 3px;
+}
+
+/* ---------- Kreu: letër me pika (si fletore) + titull i nënvizuar me marker ---------- */
 .md-typeset .hero {
-  background: var(--md-primary-fg-color);
-  color: var(--chalk);
-  border-radius: 6px;
-  padding: 3rem 2.5rem 2.5rem;
-  margin-bottom: 2.5rem;
-  border-bottom: 10px solid #5b3f2a; /* chalk ledge */
+  background-color: var(--sage-soft);
+  background-image: radial-gradient(var(--sage-line) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  border: 1px solid var(--sage-line);
+  border-radius: 20px;
+  padding: 3.2rem 2.8rem 2.8rem;
+  margin: 0 0 2.5rem;
 }
 .md-typeset .hero h1 {
-  color: var(--chalk);
-  font-size: 2.5rem;
-  margin: 0 0 0.6rem;
+  display: inline;
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  background-image: linear-gradient(transparent 60%, var(--highlight) 60%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
-.md-typeset .hero p { color: var(--chalk); opacity: 0.9; font-size: 1.05rem; }
-.md-typeset .hero .md-button {
-  color: var(--chalk);
-  border-color: rgba(244, 246, 242, 0.6);
-  margin: 0.4rem 0.4rem 0 0;
+.md-typeset .hero .headerlink { display: none; }
+.md-typeset .hero p {
+  max-width: 60ch;
+  margin: 1.2rem 0 1.6rem;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
 }
-.md-typeset .hero .md-button--primary {
-  background: var(--pencil);
-  border-color: var(--pencil);
-  color: #1d1d1d;
-}
-.md-typeset .hero .md-button:focus,
-.md-typeset .hero .md-button:hover {
-  background: var(--chalk);
-  border-color: var(--chalk);
-  color: var(--md-primary-fg-color);
+.md-typeset .hero .md-button { margin: 0.3rem 0.5rem 0 0; }
+
+@media screen and (max-width: 600px) {
+  .md-typeset .hero { padding: 2rem 1.4rem; }
+  .md-typeset .hero h1 { font-size: 1.8rem; }
 }
 
-/* Prompt cards: index cards with a margin line and ruled paper */
+/* ---------- Kartat e rrjetit ---------- */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.1rem 1.2rem;
+  transition: border-color 0.15s;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--sage);
+  box-shadow: none;
+}
+.md-typeset .grid.cards > ul > li > hr {
+  border-color: var(--sage-line);
+  margin: 0.6rem 0;
+}
+.md-typeset .grid.cards .lg { color: var(--sage); }
+.md-typeset .grid.cards.home-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+}
+
+/* ---------- Shënimet (admonitions) ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 1px;
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.success,
+.md-typeset details.question { border-color: var(--sage-line); }
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .question > summary { background: var(--sage-soft); }
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .success > .admonition-title::before,
+.md-typeset .question > summary::before { background-color: var(--sage); }
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip { border-color: var(--pencil); }
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary { background: var(--pencil-soft); }
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before { background-color: var(--pencil-dark); }
+
+/* ---------- Tabelat ---------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: none;
+  font-size: 0.78rem;
+}
+.md-typeset table:not([class]) th {
+  background: var(--sage-soft);
+  color: var(--ink);
+  font-weight: 600;
+}
+.md-typeset table:not([class]) td { border-top: 1px solid var(--sage-line); }
+
+/* ---------- Skedat e përmbajtjes (nivelet) ---------- */
+.md-typeset .tabbed-labels::before { background: var(--pencil); }
+.md-typeset .tabbed-labels > label:hover { color: var(--sage-dark); }
+
+/* ---------- Kartat e prompteve: kartelë me vija fletoreje ---------- */
 .md-typeset .prompt-card {
   position: relative;
-  background-color: var(--card-bg);
+  background-color: var(--surface);
   background-image: repeating-linear-gradient(
-    to bottom, transparent 0, transparent 27px, var(--rule-blue) 27px, var(--rule-blue) 28px);
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 4px;
-  padding: 0.6rem 1.4rem 1rem 2.4rem;
+    to bottom, transparent 0, transparent 27px, var(--rule) 27px, var(--rule) 28px);
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(38, 51, 47, 0.05), 0 8px 20px -12px rgba(38, 51, 47, 0.2);
+  padding: 0.8rem 1.5rem 1rem 2.6rem;
   margin: 2rem 0;
 }
 .md-typeset .prompt-card::before {
   content: "";
   position: absolute;
-  top: 0; bottom: 0; left: 1.3rem;
+  top: 0;
+  bottom: 0;
+  left: 1.4rem;
   width: 2px;
-  background: var(--margin-red);
-  opacity: 0.55;
+  background: var(--margin-line);
 }
-.md-typeset .prompt-card h3 { margin-top: 0.5rem; }
+.md-typeset .prompt-card h3 { margin-top: 0.3rem; }
 .md-typeset .prompt-card .highlight code {
   white-space: pre-wrap;
   word-break: break-word;
 }
 
-/* Level and time tags (sentence case, no caps) */
+/* ---------- Etiketat e niveleve ---------- */
 .md-typeset .tag {
   display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 500;
-  padding: 0.1rem 0.6rem;
-  border-radius: 999px;
   margin: 0 0.3rem 0.3rem 0;
-  background: var(--md-primary-fg-color);
-  color: var(--chalk);
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  background: var(--tag-bg, var(--sage-soft));
+  color: var(--tag-fg, var(--sage-dark));
 }
-.md-typeset .tag--elementary { background: #2e7d5b; }
-.md-typeset .tag--middle     { background: #3b6fb6; }
-.md-typeset .tag--high       { background: #7a4fa3; }
-.md-typeset .tag--all        { background: #5a5a5a; }
+.md-typeset .tag--fillor     { --tag-bg: #e2f3e8; --tag-fg: #2f6b47; }
+.md-typeset .tag--ulet       { --tag-bg: #e1ecf8; --tag-fg: #2c5b8a; }
+.md-typeset .tag--larte      { --tag-bg: #eee6f6; --tag-fg: #5e3f85; }
+.md-typeset .tag--te-gjitha  { --tag-bg: #eef0ef; --tag-fg: #4a5552; }
+[data-md-color-scheme="slate"] .md-typeset .tag--fillor    { --tag-bg: #1f3428; --tag-fg: #9fd6b3; }
+[data-md-color-scheme="slate"] .md-typeset .tag--ulet      { --tag-bg: #1e2c3d; --tag-fg: #a3c4ea; }
+[data-md-color-scheme="slate"] .md-typeset .tag--larte     { --tag-bg: #2c2338; --tag-fg: #cdb5ea; }
+[data-md-color-scheme="slate"] .md-typeset .tag--te-gjitha { --tag-bg: #252b29; --tag-fg: #c2ccc8; }
 
-/* Tables */
-.md-typeset table:not([class]) { font-size: 0.8rem; }
-.md-typeset table:not([class]) th { background: var(--md-primary-fg-color); color: var(--chalk); }
+/* ---------- Fundi i faqes ---------- */
+.md-footer { border-top: 1px solid var(--sage-line); }
 
-/* Print: clean handouts for the ethics checklist and prompt pages */
+/* ---------- Lëvizja e reduktuar ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ---------- Printimi: fletë të pastra për mësuesit ---------- */
 @media print {
   .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none !important; }
-  .md-typeset .prompt-card { break-inside: avoid; }
+  .md-typeset .prompt-card { break-inside: avoid; box-shadow: none; }
 }
