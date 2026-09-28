@@ -1,0 +1,102 @@
+site_name: AI for Teachers
+site_description: A practical guide to using AI in the classroom
+site_author: Evis Plaku
+site_url: https://evisp.github.io/ai-training-teachers/
+repo_url: https://github.com/evisp/ai-training-teachers
+repo_name: evisp/ai-training-teachers
+copyright: Evis Plaku &copy; 2026
+
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+  font:
+    text: Lexend
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    logo: material/school-outline
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.keys
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Fundamentals:
+      - fundamentals/index.md
+      - What is AI: fundamentals/what-is-ai.md
+      - Key AI tools: fundamentals/ai-tools.md
+      - AI ethics: fundamentals/ai-ethics.md
+  - Training:
+      - training/index.md
+      - Session 1: training/session-1.md
+      - Session 2: training/session-2.md
+      - Activities: training/activities.md
+  - Prompt library:
+      - prompts/index.md
+      - Lesson planning: prompts/lesson-planning.md
+      - Differentiation: prompts/differentiation.md
+      - Assessment: prompts/assessment.md
+      - Feedback and rubrics: prompts/feedback-rubrics.md
+      - Communication: prompts/communication.md
+      - Classroom activities: prompts/classroom-activities.md
+  - Resources:
+      - Glossary: resources/glossary.md
+      - FAQ: resources/faq.md

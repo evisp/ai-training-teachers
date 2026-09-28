@@ -1,0 +1,109 @@
+/* Palette: chalkboard green, pencil yellow, notebook margin red, ruled-line blue */
+:root {
+  --md-primary-fg-color: #24453b;
+  --md-primary-fg-color--light: #3a6657;
+  --md-primary-fg-color--dark: #172e27;
+  --md-accent-fg-color: #e0a400;
+  --chalk: #f4f6f2;
+  --pencil: #f2b705;
+  --margin-red: #d9534f;
+  --rule-blue: rgba(70, 120, 190, 0.14);
+  --card-bg: #ffffff;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1b3029;
+  --md-accent-fg-color: #f2b705;
+  --md-default-bg-color: #121a17;
+  --rule-blue: rgba(120, 160, 220, 0.10);
+  --card-bg: #18231f;
+}
+
+/* Typography */
+.md-typeset { line-height: 1.7; }
+.md-typeset h1 { font-weight: 700; letter-spacing: -0.015em; }
+.md-typeset h2 { font-weight: 600; margin-top: 2.2em; }
+.md-typeset p, .md-typeset ul, .md-typeset ol { max-width: 72ch; }
+
+/* Home hero: a plain chalkboard */
+.md-typeset .hero {
+  background: var(--md-primary-fg-color);
+  color: var(--chalk);
+  border-radius: 6px;
+  padding: 3rem 2.5rem 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 10px solid #5b3f2a; /* chalk ledge */
+}
+.md-typeset .hero h1 {
+  color: var(--chalk);
+  font-size: 2.5rem;
+  margin: 0 0 0.6rem;
+}
+.md-typeset .hero p { color: var(--chalk); opacity: 0.9; font-size: 1.05rem; }
+.md-typeset .hero .md-button {
+  color: var(--chalk);
+  border-color: rgba(244, 246, 242, 0.6);
+  margin: 0.4rem 0.4rem 0 0;
+}
+.md-typeset .hero .md-button--primary {
+  background: var(--pencil);
+  border-color: var(--pencil);
+  color: #1d1d1d;
+}
+.md-typeset .hero .md-button:focus,
+.md-typeset .hero .md-button:hover {
+  background: var(--chalk);
+  border-color: var(--chalk);
+  color: var(--md-primary-fg-color);
+}
+
+/* Prompt cards: index cards with a margin line and ruled paper */
+.md-typeset .prompt-card {
+  position: relative;
+  background-color: var(--card-bg);
+  background-image: repeating-linear-gradient(
+    to bottom, transparent 0, transparent 27px, var(--rule-blue) 27px, var(--rule-blue) 28px);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem 1rem 2.4rem;
+  margin: 2rem 0;
+}
+.md-typeset .prompt-card::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 1.3rem;
+  width: 2px;
+  background: var(--margin-red);
+  opacity: 0.55;
+}
+.md-typeset .prompt-card h3 { margin-top: 0.5rem; }
+.md-typeset .prompt-card .highlight code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Level and time tags (sentence case, no caps) */
+.md-typeset .tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  margin: 0 0.3rem 0.3rem 0;
+  background: var(--md-primary-fg-color);
+  color: var(--chalk);
+}
+.md-typeset .tag--elementary { background: #2e7d5b; }
+.md-typeset .tag--middle     { background: #3b6fb6; }
+.md-typeset .tag--high       { background: #7a4fa3; }
+.md-typeset .tag--all        { background: #5a5a5a; }
+
+/* Tables */
+.md-typeset table:not([class]) { font-size: 0.8rem; }
+.md-typeset table:not([class]) th { background: var(--md-primary-fg-color); color: var(--chalk); }
+
+/* Print: clean handouts for the ethics checklist and prompt pages */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none !important; }
+  .md-typeset .prompt-card { break-inside: avoid; }
+}
