@@ -671,3 +671,42 @@ svg text { font-family: inherit; }
 .md-typeset .grid.cards.three-up {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
 }
+
+/* ---------- Angazhimi "Java 1" ---------- */
+.md-typeset .commitment {
+  position: relative;
+  margin: 1.8rem 0;
+  padding: 1rem 1.6rem 1.2rem 2.8rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+  background-image: repeating-linear-gradient(
+    to bottom, transparent 0, transparent 35px, var(--rule) 35px, var(--rule) 36px);
+  box-shadow: 0 1px 2px rgba(38, 51, 47, 0.05), 0 8px 20px -12px rgba(38, 51, 47, 0.2);
+}
+.md-typeset .commitment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.5rem;
+  width: 2px;
+  background: var(--margin-line);
+}
+.md-typeset .commitment .commitment__title {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.md-typeset .commitment p { margin: 0.9rem 0; max-width: none; }
+.md-typeset .commitment .blank {
+  display: inline-block;
+  min-width: 12rem;
+  margin-left: 0.3rem;
+  border-bottom: 1.5px dashed var(--ink-soft);
+  vertical-align: bottom;
+  height: 1.1em;
+}
+@media print {
+  .md-typeset .commitment { box-shadow: none; break-inside: avoid; }
+}
