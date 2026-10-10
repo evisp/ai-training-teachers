@@ -5,8 +5,6 @@ hide:
 
 # Trajnimi
 
-:material-account-group-outline: 90 minuta, rreth 60 mësues, 8 grupe
-{ .page-meta }
 
 Teoria është në faqet e [Bazave](../bazat/index.md). Në trajnim punojmë: shohim së bashku një shembull, pastaj çdo grup krijon materiale reale për klasat e veta dhe mëson t'i kontrollojë ato.
 
