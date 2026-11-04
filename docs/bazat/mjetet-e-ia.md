@@ -8,7 +8,7 @@ Ka qindra mjete të IA-së dhe çdo javë del një i ri. Lajmi i mirë: nuk ju d
 !!! note "Çfarë do të mësoni"
     - si ta zgjidhni mjetin sipas detyrës, jo sipas modës
     - cilët janë asistentët e përgjithshëm dhe si të bisedoni me ta
-    - si të punoni me IA-në mbi materialet tuaja me NotebookLM
+    - si të punoni me IA-në mbi materialet tuaja me Gemini Notebook
     - ku ju ndihmojnë Canva dhe MagicSchool
     - si të filloni hap pas hapi, pa stres
 
@@ -27,7 +27,7 @@ Pyetja e parë nuk është *"Cili është mjeti më i mirë?"*, por *"Çfarë du
 </figure>
 
 !!! example "Shembull nga klasa: Gjeografi, klasa e 7-të"
-    Po përgatitni mësimin për lumenjtë e Shqipërisë. Për planin e orës dhe pyetjet e diskutimit përdorni një asistent të përgjithshëm. Për të punuar mbi kapitullin e librit përdorni NotebookLM. Për një poster me lumenjtë kryesorë që do ta varni në klasë përdorni Canva. Tri detyra, tri mjete, por secila zgjedhje vjen nga detyra.
+    Po përgatitni mësimin për lumenjtë e Shqipërisë. Për planin e orës dhe pyetjet e diskutimit përdorni një asistent të përgjithshëm. Për të punuar mbi kapitullin e librit përdorni Gemini Notebook. Për një poster me lumenjtë kryesorë që do ta varni në klasë përdorni Canva. Tri detyra, tri mjete, por secila zgjedhje vjen nga detyra.
 
 <div class="summary" markdown>
 <p class="summary__label">Me një fjali</p>
@@ -96,19 +96,22 @@ Një asistent i vetëm, i përdorur mirë, vlen më shumë se katër mjete të p
     2. Çfarë do të shtonit në kërkesë që përgjigjja t'i përshtatej më mirë klasës suaj?
     3. Si do ta dallonit nëse një problem i krijuar nga IA ka gabim?
 
-## NotebookLM: IA mbi materialet tuaja
+## Gemini Notebook: IA mbi materialet tuaja
 
-**NotebookLM** është një mjet falas i Google-it. Ndryshimi kryesor nga asistentët e tjerë: përgjigjet i jep **vetëm nga dokumentet që ngarkoni ju**, si programi i lëndës, kapitulli i librit ose shënimet tuaja. Pranë çdo përgjigjeje tregon nga cili dokument vjen, që ta verifikoni me një klikim.
+**Gemini Notebook** është një mjet falas i Google-it, që deri në korrik 2026 quhej **NotebookLM**. Ndryshimi kryesor nga asistentët e tjerë: përgjigjet i jep **vetëm nga dokumentet që ngarkoni ju**, si programi i lëndës, kapitulli i librit ose shënimet tuaja. Pranë çdo përgjigjeje tregon nga cili dokument vjen, që ta verifikoni me një klikim.
 
 <figure class="diagram">
---8<-- "assets/diagrams/notebooklm.svg"
-<figcaption>Ju sillni burimet; NotebookLM i kthen në materiale mësimore.</figcaption>
+--8<-- "assets/diagrams/gemini-notebook.svg"
+<figcaption>Ju sillni burimet; Gemini Notebook i kthen në materiale mësimore.</figcaption>
 </figure>
 
-Nga materialet tuaja mund të krijojë përmbledhje, pyetje, kartela studimi, udhëzues studimi dhe madje një përmbledhje audio në formë bisede. Meqë mbështetet te burimet tuaja, gabon shumë më rrallë se një asistent i përgjithshëm, por jo kurrë. Kontrolli mbetet i juaji.
+Nga materialet tuaja mund të krijojë përmbledhje, kuize, kartela studimi, prezantime, video të shkurtra dhe madje një përmbledhje audio në formë bisede. Meqë mbështetet te burimet tuaja, gabon shumë më rrallë se një asistent i përgjithshëm, por jo kurrë. Kontrolli mbetet i juaji.
 
 !!! example "Shembull nga klasa: Kimi, klasa e 10-të"
     Ngarkoni kapitullin për lidhjet kimike dhe shënimet tuaja të orës. I kërkoni 10 pyetje me alternativa dhe një fletë përmbledhëse për përsëritje. Pyetjet ndjekin terminologjinë e librit që përdorin nxënësit, jo terma nga burime të tjera, dhe pranë çdo përgjigjeje shihni pjesën e kapitullit nga vjen.
+
+!!! tip "Udhëzues hap pas hapi"
+    Si të hyni, si të ngarkoni materialet dhe si të krijoni kuize, kartela, prezantime dhe video: [Udhëzues: Gemini Notebook](gemini-notebook.md).
 
 <div class="summary" markdown>
 <p class="summary__label">Me një fjali</p>
@@ -158,7 +161,7 @@ Nuk ka nevojë t'i mësoni të gjitha menjëherë. Ky plan katër-javor ju ndihm
 </figure>
 
 !!! example "Shembull nga klasa: Fizikë, klasa e 11-të"
-    **Java 1:** kërkoni një plan për orën e lëvizjes rrethore. **Java 2:** me të njëjtin asistent krijoni pyetje kontrolli, një shpjegim me shembuj nga sporti dhe një detyrë shtëpie. **Java 3:** ngarkoni kapitullin në NotebookLM dhe krijoni kartela për përsëritje. **Java 4:** ndani me kolegët e departamentit dy promptet që funksionuan më mirë. Pa ndryshuar mënyrën si jepni mësim, keni fituar kohë çdo javë.
+    **Java 1:** kërkoni një plan për orën e lëvizjes rrethore. **Java 2:** me të njëjtin asistent krijoni pyetje kontrolli, një shpjegim me shembuj nga sporti dhe një detyrë shtëpie. **Java 3:** ngarkoni kapitullin në Gemini Notebook dhe krijoni kartela për përsëritje. **Java 4:** ndani me kolegët e departamentit dy promptet që funksionuan më mirë. Pa ndryshuar mënyrën si jepni mësim, keni fituar kohë çdo javë.
 
 <div class="summary" markdown>
 <p class="summary__label">Me një fjali</p>
@@ -179,8 +182,8 @@ Filloni me një mjet dhe një detyrë; zakoni ndërtohet me hapa të vegjël, jo
 | Plan mësimi ose ide për aktivitete | Asistent i përgjithshëm | Bisedoni dhe e përshtatni hap pas hapi |
 | Email ose mesazh për prindërit | Asistent i përgjithshëm | Shpejt, me tonin që dëshironi |
 | I njëjti tekst në tri nivele | Asistent i përgjithshëm ose MagicSchool | Diferencim në pak minuta |
-| Kuiz nga kapitulli i librit | NotebookLM | Pyetje vetëm nga materiali juaj |
-| Përmbledhje e një dokumenti të gjatë | NotebookLM | Me burim për çdo pikë |
+| Kuiz nga kapitulli i librit | Gemini Notebook | Pyetje vetëm nga materiali juaj |
+| Përmbledhje e një dokumenti të gjatë | Gemini Notebook | Me burim për çdo pikë |
 | Poster, prezantim ose fletë pune | Canva | Paraqitje e bukur pa aftësi dizajni |
 | Rubrikë vlerësimi | MagicSchool ose asistent i përgjithshëm | Shabllon i gatshëm për t'u përshtatur |
 
@@ -189,7 +192,7 @@ Filloni me një mjet dhe një detyrë; zakoni ndërtohet me hapa të vegjël, jo
 !!! success "Mbani mend"
     - Zgjidhni mjetin sipas detyrës; një asistent i përgjithshëm mbulon shumicën e nevojave.
     - Bisedoni me IA-në: pyet, lexo me kujdes, përmirëso.
-    - NotebookLM punon vetëm me materialet tuaja dhe tregon burimin e çdo përgjigjeje.
+    - Gemini Notebook punon vetëm me materialet tuaja dhe tregon burimin e çdo përgjigjeje.
     - Canva dhe MagicSchool kursejnë kohë në materiale vizuale dhe shabllone.
     - Filloni me hapa të vegjël: një mjet, një detyrë, një javë.
 

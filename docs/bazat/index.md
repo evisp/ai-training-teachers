@@ -41,7 +41,7 @@ Para trajnimit ju ftojmë të lexoni tri faqe të shkurtra. Nuk kërkohet asnjë
     *Cili mjet më duhet dhe si ta filloj?*
     { .card-question }
 
-    Asistentët e përgjithshëm, NotebookLM, Canva, MagicSchool dhe një plan 4-javor.
+    Asistentët e përgjithshëm, Gemini Notebook, Canva, MagicSchool dhe një plan 4-javor.
 
     [Lexo](mjetet-e-ia.md){ .md-button }
 
@@ -57,6 +57,25 @@ Para trajnimit ju ftojmë të lexoni tri faqe të shkurtra. Nuk kërkohet asnjë
     Privatësia, mosha e nxënësve, integriteti akademik, paragjykimet dhe transparenca.
 
     [Lexo](etika-e-ia.md){ .md-button }
+
+</div>
+
+## Pas trajnimit: udhëzues praktik
+
+<div class="grid cards" markdown>
+
+-   :material-notebook-edit-outline:{ .lg .middle } **Udhëzues: Gemini Notebook**
+
+    ---
+
+    <span class="tag tag--te-gjitha">15 minuta + provë</span>
+
+    *Si ta kthej kapitullin e librit në kuiz, kartela, prezantim dhe video?*
+    { .card-question }
+
+    Hyrja hap pas hapi, me një material shembull për fotosintezën që e shkarkoni dhe e provoni vetë.
+
+    [Hap udhëzuesin](gemini-notebook.md){ .md-button }
 
 </div>
 

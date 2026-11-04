@@ -47,7 +47,7 @@ Pyetjet që mësuesit bëjnë më shpesh kur fillojnë me IA-në. Klikoni mbi nj
 ??? question "Çfarë ndodh me atë që shkruaj në një mjet të IA-së?"
     Ruhet në serverat e kompanisë që ofron mjetin dhe, në disa raste, mund të përdoret për të përmirësuar modelet. Shumë mjete kanë te cilësimet e privatësisë një opsion që ju lejon të mos i përdorin bisedat tuaja për këtë qëllim. Rregulla më e sigurt mbetet: mos shkruani të dhëna personale.
 
-??? question "A mund ta ngarkoj librin shkollor në NotebookLM?"
+??? question "A mund ta ngarkoj librin shkollor në Gemini Notebook?"
     Për përgatitjen tuaj personale, ngarkimi i një kapitulli është praktikë e zakonshme. Mos e ndani publikisht një fletore me materiale të mbrojtura nga e drejta e autorit dhe ndiqni rregullat e shkollës suaj.
 
 ??? question "A duhet t'u them nxënësve dhe prindërve që përdor IA?"

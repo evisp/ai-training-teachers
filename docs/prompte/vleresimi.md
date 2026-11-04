@@ -94,7 +94,7 @@ Eseja: [ngjitni esenë pa emër]
 
 ### Test nga një kapitull
 
-<span class="tag tag--te-gjitha">Të gjitha nivelet</span> <span class="tag">NotebookLM</span>
+<span class="tag tag--te-gjitha">Të gjitha nivelet</span> <span class="tag">Gemini Notebook</span>
 
 **Kur ta përdorni:** kur doni një test që ndjek saktë kapitullin e librit që përdorni.
 
@@ -105,8 +105,8 @@ Për çdo pyetje trego pjesën e kapitullit nga vjen
 dhe në fund shto çelësin e përgjigjeve.
 ```
 
-!!! tip "Pa NotebookLM"
-    Funksionon edhe në çdo asistent tjetër, nëse ngjitni tekstin e kapitullit pas promptit. NotebookLM ka avantazhin që tregon burimin e çdo pyetjeje. Më shumë te [NotebookLM](../bazat/mjetet-e-ia.md#notebooklm-ia-mbi-materialet-tuaja).
+!!! tip "Pa Gemini Notebook"
+    Funksionon edhe në çdo asistent tjetër, nëse ngjitni tekstin e kapitullit pas promptit. Gemini Notebook ka avantazhin që tregon burimin e çdo pyetjeje. Hap pas hapi te [Udhëzues: Gemini Notebook](../bazat/gemini-notebook.md).
 
 </div>
 

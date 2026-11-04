@@ -761,3 +761,24 @@ svg text { font-family: inherit; }
   html, body, .md-container, .md-main { min-height: 0 !important; height: auto !important; }
   .md-main__inner { margin-top: 0 !important; padding-bottom: 0 !important; }
 }
+
+/* ---------- Kutia e shkarkimit ---------- */
+.md-typeset .download {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1.4rem 0;
+  padding: 1rem 1.4rem;
+  border: 1px solid var(--sage-line);
+  border-radius: var(--radius);
+  background: var(--sage-soft);
+}
+.md-typeset .download .download__icon {
+  flex: none;
+  width: 3rem;
+  height: 3rem;
+  color: var(--sage-dark);
+}
+.md-typeset .download .download__icon svg { width: 3rem; height: 3rem; }
+.md-typeset .download p { margin: 0.25rem 0; }
+.md-typeset .download .md-button { margin-top: 0.5rem; }
