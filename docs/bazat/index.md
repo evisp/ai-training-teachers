@@ -75,7 +75,7 @@ Para trajnimit ju ftojmë të lexoni tri faqe të shkurtra. Nuk kërkohet asnjë
 
     Hyrja hap pas hapi, me një material shembull për fotosintezën që e shkarkoni dhe e provoni vetë.
 
-    [Hap udhëzuesin](gemini-notebook.md){ .md-button }
+    [Hap udhëzuesin](../udhezues/gemini-notebook.md){ .md-button }
 
 </div>
 

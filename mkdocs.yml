@@ -101,6 +101,8 @@ nav:
       - Kontrolli dhe përmirësimi: prompte/kontrolli.md
       - Nga trajnimi: prompte/nga-trajnimi.md
       - Kartela për printim: prompte/kartela.md
+  - Udhëzues:
+      - Gemini Notebook: udhezues/gemini-notebook.md
   - Burime:
       - Fjalori: burime/fjalori.md
       - Pyetje të shpeshta: burime/pyetje-te-shpeshta.md

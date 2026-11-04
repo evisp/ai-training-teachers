@@ -111,7 +111,7 @@ Nga materialet tuaja mund të krijojë përmbledhje, kuize, kartela studimi, pre
     Ngarkoni kapitullin për lidhjet kimike dhe shënimet tuaja të orës. I kërkoni 10 pyetje me alternativa dhe një fletë përmbledhëse për përsëritje. Pyetjet ndjekin terminologjinë e librit që përdorin nxënësit, jo terma nga burime të tjera, dhe pranë çdo përgjigjeje shihni pjesën e kapitullit nga vjen.
 
 !!! tip "Udhëzues hap pas hapi"
-    Si të hyni, si të ngarkoni materialet dhe si të krijoni kuize, kartela, prezantime dhe video: [Udhëzues: Gemini Notebook](gemini-notebook.md).
+    Si të hyni, si të ngarkoni materialet dhe si të krijoni kuize, kartela, prezantime dhe video: [Udhëzues: Gemini Notebook](../udhezues/gemini-notebook.md).
 
 <div class="summary" markdown>
 <p class="summary__label">Me një fjali</p>

@@ -106,7 +106,7 @@ dhe në fund shto çelësin e përgjigjeve.
 ```
 
 !!! tip "Pa Gemini Notebook"
-    Funksionon edhe në çdo asistent tjetër, nëse ngjitni tekstin e kapitullit pas promptit. Gemini Notebook ka avantazhin që tregon burimin e çdo pyetjeje. Hap pas hapi te [Udhëzues: Gemini Notebook](../bazat/gemini-notebook.md).
+    Funksionon edhe në çdo asistent tjetër, nëse ngjitni tekstin e kapitullit pas promptit. Gemini Notebook ka avantazhin që tregon burimin e çdo pyetjeje. Hap pas hapi te [Udhëzues: Gemini Notebook](../udhezues/gemini-notebook.md).
 
 </div>
 
