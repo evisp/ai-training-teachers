@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" role="img" aria-label="Nga një ide, tri materiale: poster, prezantim dhe fletë pune">
+<rect x="250" y="8" width="180" height="62" rx="16" class="f-hl s-pencil" stroke-width="1.4"/>
+<text x="340" y="32" text-anchor="middle" font-size="12.5" class="f-soft">Një ide</text>
+<text x="340" y="57" text-anchor="middle" font-size="18" class="f-ink t-title">Riciklimi</text>
+<g class="f-none s-sage" stroke-width="1.6"><path d="M340 70 C 340 95, 160 92, 160 110"/><path d="M340 70 V 134"/><path d="M340 70 C 340 95, 520 92, 520 110"/></g>
+<g class="f-sage"><polygon points="155,108 160,118 165,108"/><polygon points="335,132 340,142 345,132"/><polygon points="515,108 520,118 525,108"/></g>
+<g transform="translate(112 120)">
+<rect width="95" height="135" rx="6" class="f-paper s-sage" stroke-width="1.4"/>
+<rect width="95" height="26" rx="6" class="f-sage"/><rect y="14" width="95" height="12" class="f-sage"/>
+<circle cx="47" cy="58" r="18" class="f-hl"/>
+<path d="M39 58 a8 8 0 1 1 8 8" class="f-none s-sage" stroke-width="2.4" stroke-linecap="round"/>
+<g class="f-sageline"><rect x="15" y="90" width="65" height="6" rx="3"/><rect x="15" y="102" width="50" height="6" rx="3"/><rect x="15" y="114" width="58" height="6" rx="3"/></g>
+</g>
+<g transform="translate(275 145)">
+<rect width="130" height="80" rx="6" class="f-paper s-sage" stroke-width="1.4"/>
+<rect x="12" y="12" width="70" height="8" rx="4" class="f-sage"/>
+<g class="f-pencil"><circle cx="16" cy="36" r="3"/><circle cx="16" cy="51" r="3"/><circle cx="16" cy="66" r="3"/></g>
+<g class="f-sageline"><rect x="24" y="33" width="80" height="6" rx="3"/><rect x="24" y="48" width="66" height="6" rx="3"/><rect x="24" y="63" width="74" height="6" rx="3"/></g>
+</g>
+<g transform="translate(470 120)">
+<rect width="100" height="135" rx="4" class="f-paper s-sage" stroke-width="1.4"/>
+<rect x="12" y="14" width="60" height="7" rx="3.5" class="f-sage"/>
+<g class="f-none s-sage" stroke-width="1.4"><rect x="12" y="36" width="10" height="10" rx="2"/><rect x="12" y="60" width="10" height="10" rx="2"/><rect x="12" y="84" width="10" height="10" rx="2"/><rect x="12" y="108" width="10" height="10" rx="2"/></g>
+<g class="f-sageline"><rect x="30" y="38" width="58" height="5" rx="2.5"/><rect x="30" y="62" width="48" height="5" rx="2.5"/><rect x="30" y="86" width="54" height="5" rx="2.5"/><rect x="30" y="110" width="44" height="5" rx="2.5"/></g>
+</g>
+<g font-size="14" class="f-ink t-title" text-anchor="middle"><text x="160" y="285">Poster</text><text x="340" y="285">Prezantim</text><text x="520" y="285">Fletë pune</text></g>
+<g font-size="12" class="f-soft" text-anchor="middle"><text x="160" y="305">për murin e klasës</text><text x="340" y="305">për orën e mësimit</text><text x="520" y="305">për punë në grup</text></g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" role="img" aria-label="Rruga e bazave: kupto, zgjidh, përdor me kujdes, pastaj trajnimi">
+<path d="M110 100 Q 195 55, 280 100 T 450 100 T 610 100" class="f-none s-sage" stroke-width="2.4" stroke-dasharray="7 7" stroke-linecap="round"/>
+<g class="f-pencil"><circle cx="110" cy="100" r="26"/><circle cx="280" cy="100" r="26"/><circle cx="450" cy="100" r="26"/></g>
+<g font-size="18" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="110" y="107">1</text><text x="280" y="107">2</text><text x="450" y="107">3</text></g>
+<line x1="610" y1="66" x2="610" y2="126" class="s-ink" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M611 68 L648 81 L611 94z" class="f-sage"/>
+<ellipse cx="610" cy="127" rx="16" ry="4" class="f-sageline"/>
+<g font-size="12" class="f-soft" text-anchor="middle"><text x="110" y="62">12 min</text><text x="280" y="62">12 min</text><text x="450" y="62">12 min</text></g>
+<g font-size="14.5" class="f-ink t-title" text-anchor="middle"><text x="110" y="154">Kupto</text><text x="280" y="154">Zgjidh</text><text x="450" y="154">Përdor me kujdes</text><text x="610" y="154">Trajnimi</text></g>
+<g font-size="12.5" class="f-soft" text-anchor="middle"><text x="110" y="175">Çfarë është IA</text><text x="280" y="175">Mjetet kryesore</text><text x="450" y="175">Etika e IA-së</text><text x="610" y="175">2 orë, bashkë</text></g>
+</svg>

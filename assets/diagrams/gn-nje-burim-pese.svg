@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 252" role="img" aria-label="Nga një burim, pesë materiale: biseda me burimet, kuiz, kartela, prezantim dhe video">
+<path d="M30 76 h102 l22 22 v76 h-124z" class="f-paper s-sage" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M132 76 v22 h22" class="f-none s-sage" stroke-width="1.5"/>
+<rect x="30" y="76" width="6" height="98" class="f-pencil"/>
+<text x="48" y="112" font-size="13.5" class="f-ink t-title">Fotosinteza</text>
+<text x="48" y="130" font-size="11.5" class="f-soft">materiali juaj</text>
+<g class="f-sageline"><rect x="48" y="142" width="86" height="5" rx="2.5"/><rect x="48" y="154" width="70" height="5" rx="2.5"/></g>
+<g class="f-none s-sage" stroke-width="1.5"><path d="M156 126 C 220 126, 220 34, 272 34"/><path d="M156 126 C 220 126, 220 80, 272 80"/><path d="M156 126 H 272"/><path d="M156 126 C 220 126, 220 172, 272 172"/><path d="M156 126 C 220 126, 220 218, 272 218"/></g>
+<g class="f-sagesoft s-line" stroke-width="1.2"><rect x="276" y="16" width="384" height="36" rx="18"/><rect x="276" y="62" width="384" height="36" rx="18"/><rect x="276" y="108" width="384" height="36" rx="18"/><rect x="276" y="154" width="384" height="36" rx="18"/><rect x="276" y="200" width="384" height="36" rx="18"/></g>
+<g class="f-pencil"><circle cx="298" cy="34" r="10"/><circle cx="298" cy="80" r="10"/><circle cx="298" cy="126" r="10"/><circle cx="298" cy="172" r="10"/><circle cx="298" cy="218" r="10"/></g>
+<g font-size="11.5" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="298" y="38">1</text><text x="298" y="84">2</text><text x="298" y="130">3</text><text x="298" y="176">4</text><text x="298" y="222">5</text></g>
+<g font-size="13.5" class="f-ink t-title"><text x="318" y="39">Biseda me burimet</text><text x="318" y="85">Kuiz</text><text x="318" y="131">Kartela</text><text x="318" y="177">Prezantim</text><text x="318" y="223">Video</text></g>
+<g font-size="12" class="f-soft"><text x="474" y="39">pyetje me burim [1]</text><text x="474" y="85">kontroll i temës</text><text x="474" y="131">përsëritje e termave</text><text x="474" y="177">draft, edhe në PowerPoint</text><text x="474" y="223">shpjegim i shkurtër</text></g>
+</svg>

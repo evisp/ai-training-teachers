@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" role="img" aria-label="Pamja e Gemini Notebook në tri kolona: burimet majtas, biseda në mes, Studio djathtas">
+<rect x="10" y="10" width="660" height="360" rx="12" class="f-paper s-line" stroke-width="1.4"/>
+<path d="M34 22 l2.6 7.4 7.4 2.6 -7.4 2.6 -2.6 7.4 -2.6 -7.4 -7.4 -2.6 7.4 -2.6z" class="f-sage"/>
+<text x="52" y="37" font-size="14" class="f-ink t-title">Gemini Notebook</text>
+<text x="340" y="37" font-size="13" text-anchor="middle" class="f-soft">Fotosinteza, klasa e 7-të</text>
+<rect x="590" y="20" width="66" height="24" rx="12" class="f-sagesoft s-line"/>
+<text x="623" y="36" font-size="12" text-anchor="middle" class="f-ink t-title">Ndaj</text>
+<line x1="10" y1="54" x2="670" y2="54" class="s-line" stroke-width="1.2"/>
+<g class="f-paper s-line" stroke-width="1.2"><rect x="22" y="66" width="170" height="292" rx="10"/><rect x="204" y="66" width="272" height="292" rx="10"/><rect x="488" y="66" width="170" height="292" rx="10"/></g>
+<g class="f-pencil"><circle cx="42" cy="88" r="11"/><circle cx="224" cy="88" r="11"/><circle cx="508" cy="88" r="11"/></g>
+<g font-size="12.5" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="42" y="93">1</text><text x="224" y="93">2</text><text x="508" y="93">3</text></g>
+<g font-size="13.5" class="f-ink t-title"><text x="60" y="93">Burimet</text><text x="242" y="93">Biseda</text><text x="526" y="93">Studio</text></g>
+<rect x="34" y="112" width="146" height="28" rx="14" class="f-none s-sage" stroke-width="1.4"/>
+<text x="107" y="131" font-size="12.5" text-anchor="middle" class="f-sage t-title">+ Shto burime</text>
+<g class="f-sage"><rect x="36" y="158" width="11" height="11" rx="2"/><rect x="36" y="186" width="11" height="11" rx="2"/></g>
+<g class="f-none s-paper" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M38.5 163.5 l2.5 2.5 4 -4.5"/><path d="M38.5 191.5 l2.5 2.5 4 -4.5"/></g>
+<g font-size="12" class="f-ink"><text x="56" y="168">Fotosinteza.pdf</text><text x="56" y="196">Shënimet e orës</text></g>
+<text x="36" y="236" font-size="11" class="f-soft">Shenja tregon cilat</text>
+<text x="36" y="251" font-size="11" class="f-soft">burime përdoren.</text>
+<rect x="216" y="110" width="248" height="78" rx="8" class="f-sagesoft"/>
+<text x="228" y="128" font-size="11" class="f-soft">Përmbledhje automatike</text>
+<g class="f-ink" opacity="0.2"><rect x="228" y="138" width="214" height="6" rx="3"/><rect x="228" y="151" width="196" height="6" rx="3"/><rect x="228" y="164" width="150" height="6" rx="3"/></g>
+<rect x="216" y="200" width="248" height="84" rx="8" class="f-paper s-line" stroke-width="1.2"/>
+<text x="228" y="218" font-size="11" class="f-soft">Përgjigjja me burim</text>
+<g class="f-ink" opacity="0.2"><rect x="228" y="228" width="200" height="6" rx="3"/><rect x="228" y="241" width="214" height="6" rx="3"/><rect x="228" y="254" width="120" height="6" rx="3"/></g>
+<rect x="354" y="250" width="20" height="14" rx="4" class="f-hl s-pencil"/>
+<text x="364" y="261" font-size="10.5" text-anchor="middle" class="f-ink t-title">1</text>
+<rect x="216" y="318" width="248" height="28" rx="14" class="f-paper s-line" stroke-width="1.2"/>
+<text x="230" y="336" font-size="11.5" class="f-soft">Bëni një pyetje për burimet…</text>
+<circle cx="450" cy="332" r="9" class="f-sage"/>
+<path d="M446 332 h8 m-3 -3 l3 3 -3 3" class="f-none s-paper" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="500" y="108" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="125" font-size="12" class="f-ink">Përmbledhje audio</text>
+<rect x="500" y="139" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="156" font-size="12" class="f-ink t-title">Video</text>
+<rect x="500" y="170" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="187" font-size="12" class="f-ink">Hartë mendore</text>
+<rect x="500" y="201" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="218" font-size="12" class="f-ink">Raporte</text>
+<rect x="500" y="232" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="249" font-size="12" class="f-ink t-title">Kartela</text>
+<rect x="500" y="263" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="280" font-size="12" class="f-ink t-title">Kuiz</text>
+<rect x="500" y="294" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="311" font-size="12" class="f-ink">Infografik</text>
+<rect x="500" y="325" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="342" font-size="12" class="f-ink t-title">Prezantim</text>
+</svg>

@@ -1,0 +1,2138 @@
+
+<!doctype html>
+<html lang="sq" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Udhëzues praktik për përdorimin e inteligjencës artificiale në klasë">
+      
+      
+        <meta name="author" content="Evis Plaku">
+      
+      
+        <link rel="canonical" href="https://evisp.github.io/ai-training-teachers/udhezues/gemini-notebook/">
+      
+      
+        <link rel="prev" href="../../prompte/kartela/">
+      
+      
+        <link rel="next" href="../../burime/fjalori/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Gemini Notebook - IA për mësuesit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lexend";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#udhezues-gemini-notebook" class="md-skip">
+          Kalo te përmbajtja
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Koka">
+    <a href="../.." title="IA për mësuesit" class="md-header__button md-logo" aria-label="IA për mësuesit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IA për mësuesit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gemini Notebook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Kalo në modalitetin e errët"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Kalo në modalitetin e errët" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Kalo në modalitetin e ndriçuar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Kalo në modalitetin e ndriçuar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Kërko" placeholder="Kërko" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Kërko">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zbraz" aria-label="Zbraz" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Duke filluar kërkimin
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/evisp/ai-training-teachers" title="Shko te burimi" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    evisp/ai-training-teachers
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Skedat" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Kreu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../bazat/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Bazat
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../trajnimi/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Trajnimi
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prompte/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Biblioteka e prompteve
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Udhëzues
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../burime/fjalori/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Burime
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigacion" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IA për mësuesit" class="md-nav__button md-logo" aria-label="IA për mësuesit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg>
+
+    </a>
+    IA për mësuesit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/evisp/ai-training-teachers" title="Shko te burimi" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    evisp/ai-training-teachers
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kreu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../bazat/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bazat
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bazat
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bazat/cfare-eshte-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Çfarë është IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bazat/mjetet-e-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mjetet kryesore të IA-së
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bazat/etika-e-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etika e IA-së
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../trajnimi/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trajnimi
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trajnimi
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trajnimi/demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo e hapjes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trajnimi/misionet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misionet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trajnimi/pas-trajnimit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pas trajnimit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../prompte/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteka e prompteve
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Biblioteka e prompteve
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/planifikimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planifikimi dhe aktivitetet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/diferencimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diferencimi dhe përshtatja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/vleresimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vlerësimi dhe komentet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/komunikimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Komunikimi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/kontrolli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontrolli dhe përmirësimi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/nga-trajnimi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nga trajnimi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompte/kartela/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kartela për printim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Udhëzues
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Udhëzues
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini Notebook
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini Notebook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabela e përmbajtjes">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabela e përmbajtjes
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-si-te-hyni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Si të hyni
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Si të hyni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pamja-e-ekranit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pamja e ekranit
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-shembulli-fotosinteza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Shembulli: fotosinteza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-cfare-mund-te-krijoni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Çfarë mund të krijoni
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Çfarë mund të krijoni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-biseda-me-burimet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Biseda me burimet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-kuiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Kuiz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-kartela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Kartela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-prezantim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Prezantim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Video
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edhe-me-shume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edhe më shumë
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ndarja-me-nxenesit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ndarja me nxënësit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-kujdes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Kujdes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Burime
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Burime
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../burime/fjalori/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fjalori
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../burime/pyetje-te-shpeshta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pyetje të shpeshta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabela e përmbajtjes">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabela e përmbajtjes
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-si-te-hyni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Si të hyni
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Si të hyni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pamja-e-ekranit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pamja e ekranit
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-shembulli-fotosinteza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Shembulli: fotosinteza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-cfare-mund-te-krijoni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Çfarë mund të krijoni
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Çfarë mund të krijoni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-biseda-me-burimet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Biseda me burimet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-kuiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Kuiz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-kartela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Kartela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-prezantim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Prezantim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Video
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edhe-me-shume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edhe më shumë
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ndarja-me-nxenesit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ndarja me nxënësit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-kujdes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Kujdes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="udhezues-gemini-notebook">Udhëzues: Gemini Notebook<a class="headerlink" href="#udhezues-gemini-notebook" title="Permanent link">&para;</a></h1>
+<p class="page-meta"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> Rreth 15 minuta lexim dhe 20 minuta provë</p>
+<p><strong>Gemini Notebook</strong> është asistenti i Google-it që punon <strong>vetëm me materialet që i jepni ju</strong>: kapitullin e librit, programin e lëndës ose shënimet tuaja. Pranë çdo përgjigjeje tregon nga cili burim vjen, dhe nga i njëjti material krijon kuize, kartela, prezantime dhe video. Ky udhëzues ju çon hap pas hapi, me një shembull të vetëm: fotosintezën.</p>
+<div class="admonition note">
+<p class="admonition-title">Çfarë do të mësoni</p>
+<ul>
+<li>si të hyni dhe të krijoni notebook-un e parë</li>
+<li>si të ngarkoni materialet tuaja</li>
+<li>si të bisedoni me burimet dhe t'i verifikoni përgjigjet</li>
+<li>si të krijoni kuiz, kartela, prezantim dhe video, me prompte të gatshme</li>
+<li>si ta ndani punën me nxënësit në mënyrë të sigurt</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Më parë quhej NotebookLM</p>
+<p>Në korrik 2026 Google e riemërtoi NotebookLM në <strong>Gemini Notebook</strong>. Është i njëjti mjet, me të njëjtat funksione. Tani notebook-ët hapen edhe nga aplikacioni Gemini.</p>
+</div>
+<h2 id="1-si-te-hyni">1. Si të hyni<a class="headerlink" href="#1-si-te-hyni" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Hapni mjetin.</strong> Shkoni te <a href="https://notebooklm.google.com">notebooklm.google.com</a>, ose hapni aplikacionin <a href="https://gemini.google.com">Gemini</a> dhe zgjidhni notebook-ët.</li>
+<li><strong>Hyni me llogarinë Google.</strong> Funksionon me llogari personale (Gmail) ose me llogarinë e shkollës. Me llogari shkolle, mjeti duhet të jetë i aktivizuar nga administratori. Nëse nuk hapet, pyesni atë.</li>
+<li><strong>Krijoni një notebook të ri.</strong> Klikoni butonin për notebook të ri dhe jepini një emër, p.sh. <em>"Fotosinteza, klasa e 7-të"</em>. Rregulla e thjeshtë: <strong>një notebook për një temë ose një kapitull.</strong></li>
+<li><strong>Shtoni burimet.</strong> Ngarkoni një ose më shumë materiale. Mund të jenë skedarë, dokumente nga Google Drive, faqe interneti, video YouTube ose tekst i ngjitur.</li>
+<li><strong>Zgjidhni gjuhën e përgjigjeve.</strong> Te cilësimet, zgjidhni shqipen si gjuhë e përgjigjeve, nëse ofrohet. Përndryshe, shtoni në çdo kërkesë: <em>"Përgjigju në shqip."</em></li>
+</ol>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" role="img" aria-label="Shto burime: skedar, Google Drive, faqe interneti, YouTube ose tekst i ngjitur">
+<rect x="10" y="10" width="660" height="180" rx="12" class="f-paper s-line" stroke-width="1.4"/>
+<text x="34" y="42" font-size="15" class="f-ink t-title">Shto burime</text>
+<text x="34" y="62" font-size="12" class="f-soft">Zgjidhni nga vijnë materialet që do të përdorë mjeti</text>
+<rect x="36" y="80" width="112" height="94" rx="10" class="f-hl s-pencil" stroke-width="1.4"/>
+<g class="f-sagesoft s-line" stroke-width="1.2"><rect x="160" y="80" width="112" height="94" rx="10"/><rect x="284" y="80" width="112" height="94" rx="10"/><rect x="408" y="80" width="112" height="94" rx="10"/><rect x="532" y="80" width="112" height="94" rx="10"/></g>
+<path d="M82 96 h14 l6 6 v20 h-20z" class="f-paper s-sage" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M96 96 v6 h6" class="f-none s-sage" stroke-width="1.6"/>
+<rect x="203" y="98" width="20" height="16" rx="2" class="f-paper s-sage" stroke-width="1.6"/>
+<rect x="209" y="104" width="20" height="16" rx="2" class="f-sage"/>
+<circle cx="340" cy="109" r="12" class="f-none s-sage" stroke-width="1.6"/>
+<path d="M328 109 h24 M340 97 c-6 6 -6 18 0 24 M340 97 c6 6 6 18 0 24" class="f-none s-sage" stroke-width="1.4"/>
+<rect x="450" y="99" width="28" height="20" rx="5" class="f-sage"/>
+<polygon points="460,104 460,114 469,109" class="f-paper"/>
+<rect x="578" y="97" width="20" height="25" rx="3" class="f-paper s-sage" stroke-width="1.6"/>
+<rect x="583" y="94" width="10" height="6" rx="2" class="f-sage"/>
+<g class="f-sageline"><rect x="582" y="106" width="12" height="3" rx="1.5"/><rect x="582" y="113" width="9" height="3" rx="1.5"/></g>
+<g font-size="12.5" class="f-ink t-title" text-anchor="middle"><text x="92" y="146">Skedar</text><text x="216" y="146">Google Drive</text><text x="340" y="146">Faqe interneti</text><text x="464" y="146">YouTube</text><text x="588" y="146">Tekst i ngjitur</text></g>
+<g font-size="11" class="f-soft" text-anchor="middle"><text x="92" y="163">PDF, tekst, audio</text><text x="216" y="163">Docs, Slides</text><text x="340" y="163">një lidhje</text><text x="464" y="163">lidhja e videos</text><text x="588" y="163">kopjo dhe ngjit</text></g>
+</svg>
+
+<figcaption>Pesë mënyra për të shtuar burime. Për shembullin tonë përdorim një skedar PDF.</figcaption>
+</figure>
+
+<h3 id="pamja-e-ekranit">Pamja e ekranit<a class="headerlink" href="#pamja-e-ekranit" title="Permanent link">&para;</a></h3>
+<p>Pasi shtoni burimet, ekrani ndahet në tri pjesë. Kur e dini çfarë ka në secilën, mjeti bëhet shumë i thjeshtë.</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" role="img" aria-label="Pamja e Gemini Notebook në tri kolona: burimet majtas, biseda në mes, Studio djathtas">
+<rect x="10" y="10" width="660" height="360" rx="12" class="f-paper s-line" stroke-width="1.4"/>
+<path d="M34 22 l2.6 7.4 7.4 2.6 -7.4 2.6 -2.6 7.4 -2.6 -7.4 -7.4 -2.6 7.4 -2.6z" class="f-sage"/>
+<text x="52" y="37" font-size="14" class="f-ink t-title">Gemini Notebook</text>
+<text x="340" y="37" font-size="13" text-anchor="middle" class="f-soft">Fotosinteza, klasa e 7-të</text>
+<rect x="590" y="20" width="66" height="24" rx="12" class="f-sagesoft s-line"/>
+<text x="623" y="36" font-size="12" text-anchor="middle" class="f-ink t-title">Ndaj</text>
+<line x1="10" y1="54" x2="670" y2="54" class="s-line" stroke-width="1.2"/>
+<g class="f-paper s-line" stroke-width="1.2"><rect x="22" y="66" width="170" height="292" rx="10"/><rect x="204" y="66" width="272" height="292" rx="10"/><rect x="488" y="66" width="170" height="292" rx="10"/></g>
+<g class="f-pencil"><circle cx="42" cy="88" r="11"/><circle cx="224" cy="88" r="11"/><circle cx="508" cy="88" r="11"/></g>
+<g font-size="12.5" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="42" y="93">1</text><text x="224" y="93">2</text><text x="508" y="93">3</text></g>
+<g font-size="13.5" class="f-ink t-title"><text x="60" y="93">Burimet</text><text x="242" y="93">Biseda</text><text x="526" y="93">Studio</text></g>
+<rect x="34" y="112" width="146" height="28" rx="14" class="f-none s-sage" stroke-width="1.4"/>
+<text x="107" y="131" font-size="12.5" text-anchor="middle" class="f-sage t-title">+ Shto burime</text>
+<g class="f-sage"><rect x="36" y="158" width="11" height="11" rx="2"/><rect x="36" y="186" width="11" height="11" rx="2"/></g>
+<g class="f-none s-paper" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M38.5 163.5 l2.5 2.5 4 -4.5"/><path d="M38.5 191.5 l2.5 2.5 4 -4.5"/></g>
+<g font-size="12" class="f-ink"><text x="56" y="168">Fotosinteza.pdf</text><text x="56" y="196">Shënimet e orës</text></g>
+<text x="36" y="236" font-size="11" class="f-soft">Shenja tregon cilat</text>
+<text x="36" y="251" font-size="11" class="f-soft">burime përdoren.</text>
+<rect x="216" y="110" width="248" height="78" rx="8" class="f-sagesoft"/>
+<text x="228" y="128" font-size="11" class="f-soft">Përmbledhje automatike</text>
+<g class="f-ink" opacity="0.2"><rect x="228" y="138" width="214" height="6" rx="3"/><rect x="228" y="151" width="196" height="6" rx="3"/><rect x="228" y="164" width="150" height="6" rx="3"/></g>
+<rect x="216" y="200" width="248" height="84" rx="8" class="f-paper s-line" stroke-width="1.2"/>
+<text x="228" y="218" font-size="11" class="f-soft">Përgjigjja me burim</text>
+<g class="f-ink" opacity="0.2"><rect x="228" y="228" width="200" height="6" rx="3"/><rect x="228" y="241" width="214" height="6" rx="3"/><rect x="228" y="254" width="120" height="6" rx="3"/></g>
+<rect x="354" y="250" width="20" height="14" rx="4" class="f-hl s-pencil"/>
+<text x="364" y="261" font-size="10.5" text-anchor="middle" class="f-ink t-title">1</text>
+<rect x="216" y="318" width="248" height="28" rx="14" class="f-paper s-line" stroke-width="1.2"/>
+<text x="230" y="336" font-size="11.5" class="f-soft">Bëni një pyetje për burimet…</text>
+<circle cx="450" cy="332" r="9" class="f-sage"/>
+<path d="M446 332 h8 m-3 -3 l3 3 -3 3" class="f-none s-paper" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="500" y="108" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="125" font-size="12" class="f-ink">Përmbledhje audio</text>
+<rect x="500" y="139" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="156" font-size="12" class="f-ink t-title">Video</text>
+<rect x="500" y="170" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="187" font-size="12" class="f-ink">Hartë mendore</text>
+<rect x="500" y="201" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="218" font-size="12" class="f-ink">Raporte</text>
+<rect x="500" y="232" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="249" font-size="12" class="f-ink t-title">Kartela</text>
+<rect x="500" y="263" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="280" font-size="12" class="f-ink t-title">Kuiz</text>
+<rect x="500" y="294" width="146" height="26" rx="7" class="f-paper s-line" stroke-width="1.2"/>
+<text x="512" y="311" font-size="12" class="f-ink">Infografik</text>
+<rect x="500" y="325" width="146" height="26" rx="7" class="f-hl s-pencil" stroke-width="1.2"/>
+<text x="512" y="342" font-size="12" class="f-ink t-title">Prezantim</text>
+</svg>
+
+<figcaption>Paraqitje e thjeshtuar; pamja reale mund të ndryshojë pak. Me të verdhë janë katër krijimet që shpjegohen më poshtë.</figcaption>
+</figure>
+
+<ol>
+<li><strong>Burimet:</strong> materialet tuaja. Shenja pranë secilit tregon nëse përdoret në përgjigje.</li>
+<li><strong>Biseda:</strong> pyetni për materialet. Çdo përgjigje ka numra si <strong>[1]</strong> që ju çojnë te pjesa e burimit.</li>
+<li><strong>Studio:</strong> krijimet e gatshme: kuiz, kartela, prezantim, video dhe të tjera.</li>
+</ol>
+<details class="note">
+<summary>Emrat e butonave në anglisht</summary>
+<p>Nëse mjeti ju shfaqet në anglisht, këto janë emrat që do të shihni:</p>
+<table>
+<thead>
+<tr>
+<th>Në këtë udhëzues</th>
+<th>Në mjet (anglisht)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Burimet</td>
+<td>Sources</td>
+</tr>
+<tr>
+<td>Biseda</td>
+<td>Chat</td>
+</tr>
+<tr>
+<td>Studio</td>
+<td>Studio</td>
+</tr>
+<tr>
+<td>Përmbledhje audio</td>
+<td>Audio Overview</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>Video Overview</td>
+</tr>
+<tr>
+<td>Hartë mendore</td>
+<td>Mind Map</td>
+</tr>
+<tr>
+<td>Raporte</td>
+<td>Reports</td>
+</tr>
+<tr>
+<td>Kartela</td>
+<td>Flashcards</td>
+</tr>
+<tr>
+<td>Kuiz</td>
+<td>Quiz</td>
+</tr>
+<tr>
+<td>Infografik</td>
+<td>Infographic</td>
+</tr>
+<tr>
+<td>Prezantim</td>
+<td>Slide Deck</td>
+</tr>
+<tr>
+<td>Përshtat (lapsi)</td>
+<td>Customize</td>
+</tr>
+<tr>
+<td>Ndaj</td>
+<td>Share</td>
+</tr>
+</tbody>
+</table>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Çfarë duhet të dini</p>
+<ul>
+<li><strong>Plani falas mjafton për një mësues:</strong> deri në 100 notebook dhe deri në 50 burime për notebook. Disa krijime kanë kufi ditor, që rinovohet pas 24 orësh. Kufijtë ndryshojnë herë pas here (<a href="https://support.google.com/notebooklm/answer/16213268?hl=en">Google</a>).</li>
+<li><strong>Mosha:</strong> me llogari personale, mjeti lejohet nga 13 vjeç, me rregulla më të rrepta për nën 18 vjeç. Me llogari shkolle vlejnë rregullat e shkollës.</li>
+</ul>
+</div>
+<h2 id="2-shembulli-fotosinteza">2. Shembulli: fotosinteza<a class="headerlink" href="#2-shembulli-fotosinteza" title="Permanent link">&para;</a></h2>
+<p>Që të gjithë të punojmë me të njëjtin material, kemi përgatitur një tekst të shkurtër për fotosintezën, për klasën e 7-të. Ka 9 pjesë: çfarë është, ku ndodh, çfarë i duhet bimës, çfarë prodhon, pse ka rëndësi, çfarë ndikon, një eksperiment, keqkuptime të shpeshta dhe një fjalor.</p>
+<div class="download">
+<p><span class="twemoji download__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/></svg></span></p>
+<div>
+<p><strong>Fotosinteza: material shembull</strong></p>
+<p>PDF, 2 faqe, në shqip. Ngarkojeni si burim në notebook-un tuaj.</p>
+<p><a class="md-button md-button--primary" download="download" href="../../assets/burime/fotosinteza-material-shembull.pdf">Shkarko materialin</a></p>
+</div>
+</div>
+<ol>
+<li>Krijoni një notebook me emrin <em>"Fotosinteza, klasa e 7-të"</em>.</li>
+<li>Te <strong>Burimet</strong>, zgjidhni <strong>Skedar</strong> dhe ngarkoni PDF-në.</li>
+<li>Prisni disa sekonda. Mjeti e lexon materialin dhe shfaq një përmbledhje të shkurtër.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Për klasën tuaj</p>
+<p>Materiali është shembull për të provuar mjetin. Në klasë, përdorni kapitullin e librit që kanë nxënësit, që pyetjet dhe termat të përputhen me atë që mësojnë.</p>
+</div>
+<h2 id="3-cfare-mund-te-krijoni">3. Çfarë mund të krijoni<a class="headerlink" href="#3-cfare-mund-te-krijoni" title="Permanent link">&para;</a></h2>
+<p>Nga i njëjti material, pesë krijime që kursejnë më shumë kohë për mësuesin:</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 252" role="img" aria-label="Nga një burim, pesë materiale: biseda me burimet, kuiz, kartela, prezantim dhe video">
+<path d="M30 76 h102 l22 22 v76 h-124z" class="f-paper s-sage" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M132 76 v22 h22" class="f-none s-sage" stroke-width="1.5"/>
+<rect x="30" y="76" width="6" height="98" class="f-pencil"/>
+<text x="48" y="112" font-size="13.5" class="f-ink t-title">Fotosinteza</text>
+<text x="48" y="130" font-size="11.5" class="f-soft">materiali juaj</text>
+<g class="f-sageline"><rect x="48" y="142" width="86" height="5" rx="2.5"/><rect x="48" y="154" width="70" height="5" rx="2.5"/></g>
+<g class="f-none s-sage" stroke-width="1.5"><path d="M156 126 C 220 126, 220 34, 272 34"/><path d="M156 126 C 220 126, 220 80, 272 80"/><path d="M156 126 H 272"/><path d="M156 126 C 220 126, 220 172, 272 172"/><path d="M156 126 C 220 126, 220 218, 272 218"/></g>
+<g class="f-sagesoft s-line" stroke-width="1.2"><rect x="276" y="16" width="384" height="36" rx="18"/><rect x="276" y="62" width="384" height="36" rx="18"/><rect x="276" y="108" width="384" height="36" rx="18"/><rect x="276" y="154" width="384" height="36" rx="18"/><rect x="276" y="200" width="384" height="36" rx="18"/></g>
+<g class="f-pencil"><circle cx="298" cy="34" r="10"/><circle cx="298" cy="80" r="10"/><circle cx="298" cy="126" r="10"/><circle cx="298" cy="172" r="10"/><circle cx="298" cy="218" r="10"/></g>
+<g font-size="11.5" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="298" y="38">1</text><text x="298" y="84">2</text><text x="298" y="130">3</text><text x="298" y="176">4</text><text x="298" y="222">5</text></g>
+<g font-size="13.5" class="f-ink t-title"><text x="318" y="39">Biseda me burimet</text><text x="318" y="85">Kuiz</text><text x="318" y="131">Kartela</text><text x="318" y="177">Prezantim</text><text x="318" y="223">Video</text></g>
+<g font-size="12" class="f-soft"><text x="474" y="39">pyetje me burim [1]</text><text x="474" y="85">kontroll i temës</text><text x="474" y="131">përsëritje e termave</text><text x="474" y="177">draft, edhe në PowerPoint</text><text x="474" y="223">shpjegim i shkurtër</text></g>
+</svg>
+
+<figcaption>I pari punon në bisedë; katër të tjerët në Studio.</figcaption>
+</figure>
+
+<p>Te Studio, çdo kuti ka një <strong>ikonë lapsi</strong> për ta përshtatur: zgjidhni gjatësinë, vështirësinë dhe shkruani çfarë doni. Promptet e gatshme më poshtë janë për këtë kuti.</p>
+<figure class="diagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="Si përshtatet një krijim në Studio: klikoni lapsin, zgjidhni opsionet, ngjitni promptin dhe klikoni Krijo">
+<rect x="20" y="24" width="180" height="46" rx="10" class="f-hl s-pencil" stroke-width="1.4"/>
+<text x="38" y="52" font-size="14" class="f-ink t-title">Kuiz</text>
+<circle cx="174" cy="47" r="14" class="f-paper s-sage" stroke-width="1.6"/>
+<g transform="translate(174 47) rotate(-45)"><rect x="-7" y="-2.5" width="11" height="5" rx="1" class="f-sage"/><polygon points="4,-2.5 8,0 4,2.5" class="f-sage"/></g>
+<path d="M190 47 C 214 47, 214 60, 236 60" class="f-none s-sage" stroke-width="1.6"/>
+<polygon points="234,55 244,60 234,65" class="f-sage"/>
+<g class="f-pencil"><circle cx="32" cy="110" r="10"/><circle cx="32" cy="152" r="10"/><circle cx="32" cy="210" r="10"/><circle cx="32" cy="252" r="10"/></g>
+<g font-size="11.5" font-weight="700" fill="#1d1d1d" text-anchor="middle"><text x="32" y="114">1</text><text x="32" y="156">2</text><text x="32" y="214">3</text><text x="32" y="256">4</text></g>
+<g font-size="12" class="f-ink"><text x="50" y="114">Klikoni lapsin</text><text x="50" y="156">Zgjidhni gjatësinë</text><text x="50" y="172">dhe vështirësinë</text><text x="50" y="214">Ngjitni promptin</text><text x="50" y="230">e gatshëm</text><text x="50" y="256">Klikoni “Krijo”</text></g>
+<rect x="248" y="16" width="412" height="270" rx="12" class="f-paper s-sage" stroke-width="1.4"/>
+<text x="270" y="46" font-size="15" class="f-ink t-title">Përshtat kuizin</text>
+<text x="270" y="78" font-size="12" class="f-soft">Numri i pyetjeve</text>
+<g class="f-paper s-line" stroke-width="1.2"><rect x="270" y="86" width="96" height="26" rx="13"/><rect x="474" y="86" width="96" height="26" rx="13"/><rect x="270" y="146" width="96" height="26" rx="13"/><rect x="474" y="146" width="96" height="26" rx="13"/></g>
+<g class="f-sage"><rect x="372" y="86" width="96" height="26" rx="13"/><rect x="372" y="146" width="96" height="26" rx="13"/></g>
+<g font-size="12" text-anchor="middle"><text x="318" y="103" class="f-ink">Më pak</text><text x="420" y="103" class="f-paper t-title">Standard</text><text x="522" y="103" class="f-ink">Më shumë</text><text x="318" y="163" class="f-ink">E lehtë</text><text x="420" y="163" class="f-paper t-title">Mesatare</text><text x="522" y="163" class="f-ink">E vështirë</text></g>
+<text x="270" y="138" font-size="12" class="f-soft">Vështirësia</text>
+<text x="270" y="198" font-size="12" class="f-soft">Për çfarë duhet të jetë?</text>
+<rect x="270" y="206" width="368" height="46" rx="8" class="f-hl s-pencil" stroke-width="1.3"/>
+<g font-size="11.5" class="f-ink"><text x="282" y="225">Kuiz për klasën e 7-të, në shqip. Kontrollo ku ndodh</text><text x="282" y="242">fotosinteza, çfarë hyn dhe çfarë del…</text></g>
+<rect x="566" y="258" width="72" height="22" rx="11" class="f-sage"/>
+<text x="602" y="273" font-size="12" text-anchor="middle" class="f-paper t-title">Krijo</text>
+</svg>
+
+<figcaption>Katër hapa për çdo krijim. Emrat e opsioneve ndryshojnë pak nga një krijim te tjetri.</figcaption>
+</figure>
+
+<h3 id="31-biseda-me-burimet">3.1 Biseda me burimet<a class="headerlink" href="#31-biseda-me-burimet" title="Permanent link">&para;</a></h3>
+<p>Bisedoni me materialin si me një kolege që e ka lexuar me kujdes. Përgjigjet vijnë vetëm nga burimet tuaja.</p>
+<div class="prompt-card">
+<p class="prompt-label">Shkruajeni te Biseda</p>
+<div class="highlight"><pre><span></span><code>Shpjegoje fotosintezën me 5 fjali të thjeshta për nxënësit e klasës së 7-të.
+Përdor vetëm materialin e ngarkuar dhe përgjigju në shqip.
+</code></pre></div>
+</div>
+<div class="prompt-card">
+<p class="prompt-label">Për të planifikuar orën</p>
+<div class="highlight"><pre><span></span><code>Nga ky material, krijo një plan mësimi 45-minutësh për klasën e 7-të.
+Përfshi eksperimentin me bimën ujore dhe 3 pyetje kontrolli në fund.
+Paraqite si tabelë: koha, aktiviteti, çfarë bëjnë nxënësit.
+</code></pre></div>
+</div>
+<div class="prompt-card">
+<p class="prompt-label">Për të njohur nxënësit</p>
+<div class="highlight"><pre><span></span><code>Cilat janë keqkuptimet e nxënësve për këtë temë, sipas materialit?
+Për secilin, propozo një pyetje që e zbulon në klasë.
+</code></pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Verifikoni me një klikim</p>
+<p>Klikoni numrat <strong>[1]</strong>, <strong>[2]</strong> pranë përgjigjes për të parë pjesën e saktë të burimit. Përgjigjet e mira mund t'i ruani si <strong>shënim</strong> në notebook, që t'i gjeni më vonë.</p>
+</div>
+<h3 id="32-kuiz">3.2 Kuiz<a class="headerlink" href="#32-kuiz" title="Permanent link">&para;</a></h3>
+<p><span class="tag tag--te-gjitha">Studio → Kuiz</span></p>
+<p><strong>Kur ta përdorni:</strong> në fund të temës, për një kontroll të shpejtë. Nxënësit mund ta zgjidhin në ekran dhe mjeti ruan progresin e tyre.</p>
+<div class="prompt-card">
+<p class="prompt-label">Ngjiteni te kutia e përshtatjes</p>
+<div class="highlight"><pre><span></span><code>Kuiz për nxënësit e klasës së 7-të, në shqip.
+Pyetjet të kontrollojnë: ku ndodh fotosinteza, çfarë i duhet bimës,
+çfarë prodhon dhe pse është e rëndësishme.
+Përfshi të paktën 2 pyetje për keqkuptimet e shpeshta.
+Mos pyet për barazimin me simbole kimike.
+</code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Kujdes</p>
+<p>Zgjidheni vetë kuizin para se ta jepni. Kontrolloni sidomos përgjigjet që mjeti i shënon si të sakta.</p>
+</div>
+<h3 id="33-kartela">3.3 Kartela<a class="headerlink" href="#33-kartela" title="Permanent link">&para;</a></h3>
+<p><span class="tag tag--te-gjitha">Studio → Kartela</span></p>
+<p><strong>Kur ta përdorni:</strong> për përsëritjen e termave të rinj. Në njërën anë është termi, në tjetrën shpjegimi. Nxënësit shënojnë cilat i dinë dhe cilat jo, dhe mjeti e mban mend.</p>
+<div class="prompt-card">
+<p class="prompt-label">Ngjiteni te kutia e përshtatjes</p>
+<div class="highlight"><pre><span></span><code>Kartela për termat kryesorë të fotosintezës: klorofilë, kloroplast,
+gojëza, glukozë, niseshte, dioksid karboni, oksigjen dhe zinxhir ushqimor.
+Në njërën anë termi, në tjetrën një shpjegim me një fjali të thjeshtë,
+në shqip, për klasën e 7-të.
+</code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Kujdes</p>
+<p>Termat duhet të jenë të njëjtët me ato të librit. Nëse mjeti përdor një fjalë tjetër, ndreqeni në kërkesë: <em>"Përdor termin 'gojëza', jo 'stomata'."</em></p>
+</div>
+<h3 id="34-prezantim">3.4 Prezantim<a class="headerlink" href="#34-prezantim" title="Permanent link">&para;</a></h3>
+<p><span class="tag tag--te-gjitha">Studio → Prezantim</span></p>
+<p><strong>Kur ta përdorni:</strong> për draftin e prezantimit të orës. Mund t'i kërkoni ndryshime çdo slajdi veç e veç dhe ta shkarkoni si skedar PowerPoint, që ta përshtatni vetë.</p>
+<div class="prompt-card">
+<p class="prompt-label">Ngjiteni te kutia e përshtatjes</p>
+<div class="highlight"><pre><span></span><code>Prezantim me 8 slajde për një orë 45-minutëshe për fotosintezën,
+klasa e 7-të, në shqip. Një ide për slajd dhe pak tekst.
+Slajdi i parë fillon me pyetjen: "Nga e merr ushqimin një ulli?"
+Slajdi i fundit ka 3 pyetje për diskutim në klasë.
+</code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Kujdes, si në demo</p>
+<p>Kontrolloni tekstin brenda figurave dhe drejtimin e shigjetave: dioksidi i karbonit <strong>hyn</strong> në gjethe, oksigjeni <strong>del</strong>. Nëse një figurë ka etiketa të gabuara, kërkojeni pa tekst dhe shtojini etiketat vetë. Shihni <a href="../../trajnimi/demo/#hapi-4-krijojme-nje-imazh">Demo e hapjes, hapi 4</a>.</p>
+</div>
+<h3 id="35-video">3.5 Video<a class="headerlink" href="#35-video" title="Permanent link">&para;</a></h3>
+<p><span class="tag tag--te-gjitha">Studio → Video</span></p>
+<p><strong>Kur ta përdorni:</strong> për një shpjegim të shkurtër që nxënësit e shohin para orës ose për përsëritje. Mjeti krijon slajde me zë që shpjegon.</p>
+<div class="prompt-card">
+<p class="prompt-label">Ngjiteni te kutia e përshtatjes</p>
+<div class="highlight"><pre><span></span><code>Video e shkurtër shpjeguese për nxënësit e klasës së 7-të, në shqip:
+si e prodhon bima ushqimin e vet.
+Fillo me pyetjen "Nga e merr ushqimin një ulli?",
+shpjego çfarë hyn dhe çfarë del nga gjethja,
+dhe mbyll me 3 pyetje për të menduar.
+</code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Kujdes</p>
+<ul>
+<li>Krijimi zgjat disa minuta dhe ka kufi ditor. Filloni nga një ditë më parë.</li>
+<li>Shikojeni të gjithë videon para se ta tregoni: kontrolloni faktet, shqiptimin dhe tekstin në ekran.</li>
+<li>Disa stile vizuale ofrohen vetëm në anglisht. Nëse rezultati del në anglisht, zgjidhni stilin e zakonshëm.</li>
+</ul>
+</div>
+<h3 id="edhe-me-shume">Edhe më shumë<a class="headerlink" href="#edhe-me-shume" title="Permanent link">&para;</a></h3>
+<p>Studio ka edhe krijime të tjera, që funksionojnë në të njëjtën mënyrë:</p>
+<ul>
+<li><strong>Përmbledhje audio:</strong> një bisedë me dy zëra për materialin, si një podkast i shkurtër. E mirë për përgatitjen tuaj.</li>
+<li><strong>Hartë mendore:</strong> idetë kryesore dhe lidhjet mes tyre, me një shikim.</li>
+<li><strong>Raporte:</strong> udhëzues studimi ose fletë përmbledhëse për përsëritje.</li>
+<li><strong>Infografik:</strong> një faqe vizuale me disa stile. Kontrolloni çdo fjalë në figurë.</li>
+</ul>
+<h2 id="4-ndarja-me-nxenesit">4. Ndarja me nxënësit<a class="headerlink" href="#4-ndarja-me-nxenesit" title="Permanent link">&para;</a></h2>
+<div class="outcomes">
+<ul>
+<li><strong>Mësuesi krijon, nxënësit përdorin.</strong> Notebook-un e përgatitni ju; nxënësit marrin vetëm kuizin, kartelat ose videon.</li>
+<li><strong>Ndani vetëm për shikim.</strong> Me butonin <strong>Ndaj</strong>, jepni të drejtë shikimi, jo redaktimi.</li>
+<li><strong>Me llogari shkolle,</strong> notebook-ët mund të krijohen dhe të ndahen edhe nga Google Classroom, nëse administratori i ka aktivizuar mjetet.</li>
+<li><strong>Në fillor,</strong> përdoreni në projektor me gjithë klasën, pa llogari për nxënësit.</li>
+</ul>
+</div>
+<p>Më shumë te <a href="../../bazat/etika-e-ia/#mosha-dhe-perdorimi-nga-nxenesit">Mosha dhe përdorimi nga nxënësit</a>.</p>
+<h2 id="5-kujdes">5. Kujdes<a class="headerlink" href="#5-kujdes" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Katër rregulla</p>
+<ol>
+<li><strong>Asnjë e dhënë personale e nxënësve</strong> në burime: as emra, as nota, as punë me emër.</li>
+<li><strong>Librat shkollorë</strong> mund t'i ngarkoni për përgatitjen tuaj, por mos i ndani publikisht.</li>
+<li><strong>Kontrolloni shqipen</strong> në çdo krijim, sidomos në prezantime, video dhe infografikë.</li>
+<li><strong>Një burim i cituar nuk e bën përgjigjen të saktë.</strong> Klikoni burimin dhe lexojeni vetë.</li>
+</ol>
+</div>
+<div class="summary">
+<p class="summary__label">Me një fjali</p>
+<p>Me materialet tuaja si burim, Gemini Notebook bëhet një asistent që njeh lëndën tuaj; kontrolli i fundit mbetet i juaji.</p>
+</div>
+<details class="reflect">
+<summary>3 pyetje për të menduar</summary>
+<ol>
+<li>Cili kapitull i lëndës suaj do të ishte notebook-u juaj i parë?</li>
+<li>Cili nga pesë krijimet do t'ju kursente më shumë kohë këtë muaj?</li>
+<li>Si do t'u shpjegonit nxënësve që një video e krijuar nga IA duhet kontrolluar?</li>
+</ol>
+</details>
+<div class="next-page">
+<p><strong>Më shumë prompte</strong></p>
+<p>Në bibliotekë gjeni edhe një prompt për një test të plotë nga kapitulli, me burim për çdo pyetje.</p>
+<p><a class="md-button md-button--primary" href="../../prompte/vleresimi/">Hap promptet e vlerësimit</a>
+<a class="md-button" href="../../bazat/">Kthehu te Bazat</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Kthehu në krye
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fundi i faqes" >
+        
+          
+          <a href="../../prompte/kartela/" class="md-footer__link md-footer__link--prev" aria-label="E mëparshme: Kartela për printim">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                E mëparshme
+              </span>
+              <div class="md-ellipsis">
+                Kartela për printim
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../burime/fjalori/" class="md-footer__link md-footer__link--next" aria-label="Tjetër: Fjalori">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Tjetër
+              </span>
+              <div class="md-ellipsis">
+                Fjalori
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Evis Plaku
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.instant", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "U kopjua", "clipboard.copy": "Kopjo", "search.result.more.one": "1 m\u00eb shum\u00eb n\u00eb k\u00ebt\u00eb faqe", "search.result.more.other": "# m\u00eb shum\u00eb n\u00eb k\u00ebt\u00eb faqe", "search.result.none": "Nuk ka dokumente t\u00eb p\u00ebrputhshme", "search.result.one": "1 dokument i p\u00ebrputhsh\u00ebm", "search.result.other": "# dokumente t\u00eb p\u00ebrputhshme", "search.result.placeholder": "Shkruani p\u00ebr t\u00eb k\u00ebrkuar", "search.result.term.missing": "Mungon", "select.version": "Zgjidh versionin"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

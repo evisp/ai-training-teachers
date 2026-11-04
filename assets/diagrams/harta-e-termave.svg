@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 270" role="img" aria-label="Harta e termave në tre grupe: si funksionon IA, si e përdorim, ku kemi kujdes">
+<g class="f-paper s-line" stroke-width="1.2"><rect x="10" y="10" width="210" height="250" rx="14"/><rect x="235" y="10" width="210" height="250" rx="14"/><rect x="460" y="10" width="210" height="250" rx="14"/></g>
+<g class="f-sage"><circle cx="38" cy="38" r="12"/><circle cx="263" cy="38" r="12"/></g>
+<circle cx="488" cy="38" r="12" class="f-pencil"/>
+<g class="f-none s-paper" stroke-width="2" stroke-linecap="round"><circle cx="38" cy="38" r="4.5"/><path d="M38 29 v3 M38 44 v3 M29 38 h3 M44 38 h3"/><path d="M257 38 h12 m-4 -4 l4 4 -4 4" stroke-linejoin="round"/></g>
+<rect x="486.5" y="31" width="3" height="9" rx="1.5" fill="#1d1d1d"/><circle cx="488" cy="44" r="1.8" fill="#1d1d1d"/>
+<g font-size="15" class="f-ink t-title"><text x="58" y="43">Si funksionon IA</text><text x="283" y="43">Si e përdorim</text><text x="508" y="43">Ku kemi kujdes</text></g>
+<g class="f-sagesoft"><rect x="26" y="70" width="178" height="28" rx="14"/><rect x="26" y="106" width="178" height="28" rx="14"/><rect x="26" y="142" width="178" height="28" rx="14"/><rect x="26" y="178" width="178" height="28" rx="14"/><rect x="26" y="214" width="178" height="28" rx="14"/></g>
+<g class="f-paper s-sage" stroke-width="1.2"><rect x="251" y="70" width="178" height="28" rx="14"/><rect x="251" y="106" width="178" height="28" rx="14"/><rect x="251" y="142" width="178" height="28" rx="14"/><rect x="251" y="178" width="178" height="28" rx="14"/><rect x="251" y="214" width="178" height="28" rx="14"/></g>
+<g class="f-hl"><rect x="476" y="70" width="178" height="28" rx="14"/><rect x="476" y="106" width="178" height="28" rx="14"/><rect x="476" y="142" width="178" height="28" rx="14"/><rect x="476" y="178" width="178" height="28" rx="14"/><rect x="476" y="214" width="178" height="28" rx="14"/></g>
+<g font-size="13" class="f-ink" text-anchor="middle">
+<text x="115" y="89">Mësimi automatik</text><text x="115" y="125">Model gjuhësor</text><text x="115" y="161">Të dhëna trajnimi</text><text x="115" y="197">Token</text><text x="115" y="233">Rrjet nervor</text>
+<text x="340" y="89">Prompt</text><text x="340" y="125">Asistent i përgjithshëm</text><text x="340" y="161">Dritarja e kontekstit</text><text x="340" y="197">Multimodal</text><text x="340" y="233">Agjent i IA-së</text>
+<text x="565" y="89">Halucinacion</text><text x="565" y="125">Paragjykim</text><text x="565" y="161">Anonimizim</text><text x="565" y="197">Verifikim</text><text x="565" y="233">Detektor i IA-së</text>
+</g>
+</svg>

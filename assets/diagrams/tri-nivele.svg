@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 250" role="img" aria-label="Një tekst, tri nivele: bazë, standard, sfidë, me të njëjtat fakte dhe të njëjtin objektiv">
+<rect x="10" y="70" width="150" height="110" rx="8" class="f-paper s-sage" stroke-width="1.4"/>
+<text x="26" y="98" font-size="14" class="f-ink t-title">Një tekst</text>
+<text x="26" y="116" font-size="12" class="f-soft">nga libri</text>
+<g class="f-sageline"><rect x="26" y="130" width="112" height="5" rx="2.5"/><rect x="26" y="142" width="96" height="5" rx="2.5"/><rect x="26" y="154" width="106" height="5" rx="2.5"/><rect x="26" y="166" width="80" height="5" rx="2.5"/></g>
+<path d="M162 125 C 198 125, 200 185, 232 185" class="f-none s-sage" stroke-width="1.8"/>
+<polygon points="230,179 240,185 230,191" class="f-sage"/>
+<rect x="244" y="150" width="130" height="70" rx="12" class="f-sagesoft s-line" stroke-width="1.2"/>
+<rect x="384" y="110" width="130" height="110" rx="12" class="f-paper s-sage" stroke-width="1.4"/>
+<rect x="524" y="70" width="146" height="150" rx="12" class="f-hl s-pencil" stroke-width="1.4"/>
+<g font-size="15" class="f-ink t-title"><text x="260" y="176">Bazë</text><text x="400" y="136">Standard</text><text x="540" y="96">Sfidë</text></g>
+<g font-size="12" class="f-soft"><text x="260" y="196">fjali të shkurtra,</text><text x="260" y="212">fjalë të thjeshta</text><text x="400" y="156">si në libër</text><text x="540" y="116">terma të lëndës</text><text x="540" y="132">dhe një pyetje</text><text x="540" y="148">për të menduar</text></g>
+<line x1="244" y1="234" x2="670" y2="234" class="s-sage" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="340" y="222" width="234" height="24" rx="12" class="f-paper s-line"/>
+<text x="457" y="239" text-anchor="middle" font-size="12" class="f-ink t-title">të njëjtat fakte, i njëjti objektiv</text>
+</svg>

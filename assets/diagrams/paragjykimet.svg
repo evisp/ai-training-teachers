@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" role="img" aria-label="IA mëson nga tekstet e internetit dhe përsërit modelin më të shpeshtë, prandaj mësuesi pyet kush mungon">
+<g class="f-paper s-line" stroke-width="1.2"><rect x="30" y="30" width="120" height="80" rx="6"/><rect x="20" y="42" width="120" height="80" rx="6"/><rect x="10" y="54" width="120" height="80" rx="6"/></g>
+<g class="f-sageline"><rect x="24" y="72" width="90" height="6" rx="3"/><rect x="24" y="86" width="72" height="6" rx="3"/><rect x="24" y="100" width="84" height="6" rx="3"/><rect x="24" y="114" width="60" height="6" rx="3"/></g>
+<text x="80" y="160" text-anchor="middle" font-size="14" class="f-ink t-title">Tekstet e internetit</text>
+<text x="80" y="180" text-anchor="middle" font-size="12" class="f-soft">shumica në anglisht,</text>
+<text x="80" y="196" text-anchor="middle" font-size="12" class="f-soft">me stereotipe</text>
+<path d="M160 90 H 222" class="f-none s-sage" stroke-width="1.8"/><polygon points="220,84 231,90 220,96" class="f-sage"/>
+<rect x="236" y="50" width="140" height="80" rx="16" class="f-sage"/>
+<text x="306" y="87" text-anchor="middle" font-size="15" class="f-paper t-title">Modeli</text>
+<text x="306" y="107" text-anchor="middle" font-size="12" class="f-paper">mëson modelet</text>
+<path d="M384 90 H 440" class="f-none s-sage" stroke-width="1.8"/><polygon points="438,84 449,90 438,96" class="f-sage"/>
+<rect x="456" y="30" width="214" height="120" rx="14" class="f-paper s-line" stroke-width="1.2"/>
+<text x="472" y="54" font-size="12.5" class="f-soft">“Vizato një shkencëtar”</text>
+<g class="f-soft" opacity="0.75">
+<circle cx="492" cy="84" r="9"/><path d="M476 126 a16 18 0 0 1 32 0z"/>
+<circle cx="538" cy="84" r="9"/><path d="M522 126 a16 18 0 0 1 32 0z"/>
+<circle cx="584" cy="84" r="9"/><path d="M568 126 a16 18 0 0 1 32 0z"/>
+<circle cx="630" cy="84" r="9"/><path d="M614 126 a16 18 0 0 1 32 0z"/>
+</g>
+<g class="f-none s-ink" stroke-width="1.4"><rect x="485" y="81" width="6" height="4" rx="2"/><rect x="493" y="81" width="6" height="4" rx="2"/><rect x="531" y="81" width="6" height="4" rx="2"/><rect x="539" y="81" width="6" height="4" rx="2"/><rect x="577" y="81" width="6" height="4" rx="2"/><rect x="585" y="81" width="6" height="4" rx="2"/><rect x="623" y="81" width="6" height="4" rx="2"/><rect x="631" y="81" width="6" height="4" rx="2"/></g>
+<text x="563" y="176" text-anchor="middle" font-size="14" class="f-ink t-title">I njëjti profil, çdo herë</text>
+<text x="563" y="196" text-anchor="middle" font-size="12" class="f-soft">IA përsërit modelin më të shpeshtë</text>
+<rect x="180" y="226" width="320" height="40" rx="20" class="f-hl s-pencil"/>
+<text x="340" y="251" text-anchor="middle" font-size="14" class="f-ink t-title">Pyetja e mësuesit: kush mungon këtu?</text>
+</svg>

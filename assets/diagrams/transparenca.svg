@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" role="img" aria-label="Një fletë pune me shënimin përgatitur me ndihmën e IA-së dhe kontrolluar nga mësuesi, e ndarë me nxënësit, prindërit dhe kolegët">
+<rect x="30" y="16" width="220" height="250" rx="8" class="f-paper s-sage" stroke-width="1.4"/>
+<rect x="48" y="36" width="120" height="9" rx="4.5" class="f-sage"/>
+<g class="f-sageline"><rect x="48" y="64" width="180" height="6" rx="3"/><rect x="48" y="80" width="160" height="6" rx="3"/><rect x="48" y="96" width="174" height="6" rx="3"/><rect x="48" y="122" width="180" height="6" rx="3"/><rect x="48" y="138" width="140" height="6" rx="3"/><rect x="48" y="154" width="168" height="6" rx="3"/><rect x="48" y="170" width="110" height="6" rx="3"/></g>
+<rect x="42" y="208" width="196" height="46" rx="8" class="f-hl s-pencil"/>
+<text x="140" y="227" text-anchor="middle" font-size="11" class="f-ink t-title">Përgatitur me ndihmën e IA-së,</text>
+<text x="140" y="243" text-anchor="middle" font-size="11" class="f-ink t-title">kontrolluar nga mësuesi.</text>
+<g class="f-none s-sage" stroke-width="1.6"><path d="M252 140 C 290 140, 290 58, 322 58"/><path d="M252 140 H 322"/><path d="M252 140 C 290 140, 290 222, 322 222"/></g>
+<g class="f-sagesoft s-line" stroke-width="1.2"><circle cx="352" cy="58" r="27"/><circle cx="352" cy="140" r="27"/><circle cx="352" cy="222" r="27"/></g>
+<g class="f-sage"><circle cx="352" cy="51" r="6"/><path d="M341 70 a11 11 0 0 1 22 0z"/>
+<circle cx="345" cy="133" r="5.5"/><path d="M335 151 a10 10 0 0 1 20 0z"/><circle cx="360" cy="135" r="4.5"/><path d="M352 151 a8 8 0 0 1 16 0z"/>
+<path d="M338 222 l14 -10 14 10z"/><rect x="341" y="222" width="22" height="12"/></g>
+<g class="f-paper"><rect x="349" y="226" width="6" height="8"/></g>
+<g font-size="14.5" class="f-ink t-title"><text x="394" y="54">Nxënësit</text><text x="394" y="136">Prindërit</text><text x="394" y="218">Kolegët dhe drejtoria</text></g>
+<g font-size="12.5" class="f-soft"><text x="394" y="74">si e përdorni IA-në dhe sa lejohet</text><text x="394" y="156">si përdoret IA në klasë dhe pse</text><text x="394" y="238">për rregulla të përbashkëta</text></g>
+</svg>

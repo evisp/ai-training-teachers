@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 230" role="img" aria-label="Dy ese shembull vlerësohen nga mësuesit dhe nga IA me të njëjtën rubrikë, pastaj krahasohen; vendimi mbetet i mësuesit">
+<g class="f-paper s-sage" stroke-width="1.4"><rect x="10" y="40" width="90" height="120" rx="6"/><rect x="112" y="40" width="90" height="120" rx="6"/></g>
+<g font-size="13" class="f-ink t-title"><text x="22" y="64">Eseja A</text><text x="124" y="64">Eseja B</text></g>
+<g class="f-sageline"><rect x="22" y="78" width="66" height="5" rx="2.5"/><rect x="22" y="90" width="58" height="5" rx="2.5"/><rect x="22" y="102" width="64" height="5" rx="2.5"/><rect x="22" y="114" width="50" height="5" rx="2.5"/><rect x="22" y="126" width="62" height="5" rx="2.5"/><rect x="124" y="78" width="66" height="5" rx="2.5"/><rect x="124" y="90" width="44" height="5" rx="2.5"/><rect x="124" y="102" width="60" height="5" rx="2.5"/><rect x="124" y="114" width="36" height="5" rx="2.5"/></g>
+<g class="f-none s-red" stroke-width="1.6"><path d="M124 136 q8 -6 16 0 t16 0"/></g>
+<text x="106" y="184" text-anchor="middle" font-size="11.5" class="f-soft">shembuj nga IA, jo punë reale</text>
+<g class="f-none s-sage" stroke-width="1.6"><path d="M204 100 C 238 100, 236 48, 268 48"/><path d="M204 100 C 238 100, 236 152, 268 152"/></g>
+<rect x="270" y="20" width="175" height="56" rx="12" class="f-sagesoft s-line" stroke-width="1.2"/>
+<rect x="270" y="124" width="175" height="56" rx="12" class="f-paper s-sage" stroke-width="1.4"/>
+<path d="M425 132 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" class="f-pencil"/>
+<g font-size="13.5" class="f-ink t-title"><text x="286" y="44">Vlerësimi juaj</text><text x="286" y="148">Vlerësimi i IA-së</text></g>
+<g font-size="11.5" class="f-soft"><text x="286" y="62">me rubrikën, pa IA</text><text x="286" y="166">me të njëjtën rubrikë</text></g>
+<g class="f-none s-sage" stroke-width="1.6"><path d="M445 48 C 478 48, 476 100, 500 100"/><path d="M445 152 C 478 152, 476 100, 500 100"/></g>
+<rect x="502" y="66" width="168" height="68" rx="14" class="f-hl s-pencil" stroke-width="1.4"/>
+<text x="586" y="90" text-anchor="middle" font-size="14" class="f-ink t-title">Krahasoni</text>
+<text x="586" y="108" text-anchor="middle" font-size="11.5" class="f-ink">ku bini dakord,</text>
+<text x="586" y="124" text-anchor="middle" font-size="11.5" class="f-ink">ku ndryshoni?</text>
+<line x1="586" y1="134" x2="586" y2="170" class="s-sage" stroke-width="1.6"/>
+<polygon points="581,168 586,177 591,168" class="f-sage"/>
+<rect x="496" y="180" width="180" height="34" rx="17" class="f-sage"/>
+<text x="586" y="202" text-anchor="middle" font-size="12.5" class="f-paper t-title">Vendimi mbetet i mësuesit</text>
+</svg>
